@@ -4,6 +4,8 @@ import Header from './components/Header';
 import { SignupPage } from './pages/SignupPage';
 import { SigninPage } from './pages/SigninPage';
 import { HomePage } from './pages/HomePage';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
   return (

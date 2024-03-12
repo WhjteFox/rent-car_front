@@ -10,7 +10,8 @@ export const SigninPage = () => {
             body: JSON.stringify({username, password})
          })
          const data = await response.json();
-         localStorage.setItem(data?.token);
+         localStorage.setItem(data.token);
+         return data.token;
       }
       catch (error) {
          console.error(error);

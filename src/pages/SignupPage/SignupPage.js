@@ -1,31 +1,34 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const SignupPage = () => {
-   const [username, setUsername] = useState("");
-   const [password, setPassword] = useState("");
-   const submitHandler = async () => {
-      try {
-         const response = await fetch("http://ec2-13-51-6-115.eu-north-1.compute.amazonaws.com/api/signup", {
-            method: "POST",
-            body: JSON.stringify({username, password})
-         })
-         const data = await response.json();
-         localStorage.setItem(data?.token);
-      }
-      catch (error) {
-         console.error(error);
-      }
-   } 
-  return (
-   <div className='container'>
-      <div className='page'>
-         <form>
+   const [id, change_id] = useState("");
+   const [password, change_password] = useState("");
+   
+   const navigate = useNavigate();
+   
+   const handle_submit = (e) => {
+      let signup_user = {id, password};
+      fetch("http://localhost:8000/users", {
+         method:"POST",
+         headers:{'content-type':'application/json'},
+         body: JSON.stringify(signup_user)
+      }).then((res) => {
+         navigate('/login');
+      }).catch((err) => {
+      });
+   }
+
+   return (
+      <div className='container'>
+         <div className='page'>
             <h2>Створити обліковий запис</h2>
-            <input onChange={ (e) => {setUsername(e.target.value)} } value={ username } type="text" placeholder='Логін'/>
-            <input onChange={ (e) => {setPassword(e.target.value)} } value={ password } type="password" placeholder='Пароль'/>
-            <button onClick={ submitHandler }>Зареєструватися</button>
-         </form>
+            <form onSubmit={handle_submit}>
+               <input required value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
+               <input required value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
+               <button type='submit'>Зареєструватися</button>
+            </form>
+         </div>
       </div>
-    </div>
-  )
+   )
 }

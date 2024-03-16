@@ -2,20 +2,18 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import { SignupPage } from './pages/SignupPage';
-import { SigninPage } from './pages/SigninPage';
+import { LoginPage } from './pages/LoginPage';
 import { HomePage } from './pages/HomePage';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
   return (
     <div className="App"> 
-    <Header/>
-    <Routes>
-      <Route index element={ <HomePage/> }/>
-      <Route path='/signin' element={ <SigninPage/> }/>
-      <Route path='/signup' element={ <SignupPage/> }/>
-    </Routes>
+        <Header></Header>
+        <Routes>
+          <Route path='/' element = {<HomePage/>}></Route>
+          <Route path='/login' element = {<LoginPage/>}></Route>
+          <Route path='/signup' element = {<SignupPage/>}></Route>
+        </Routes>
     </div>
   ); //test comment
 }

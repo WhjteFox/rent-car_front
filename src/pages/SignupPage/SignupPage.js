@@ -20,15 +20,22 @@ export const SignupPage = () => {
    }
 
    return (
-      <div className='container'>
-         <div className='page'>
-            <h2>Створити обліковий запис</h2>
-            <form onSubmit={handle_submit}>
-               <input required value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
-               <input required value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
-               <button type='submit'>Зареєструватися</button>
-            </form>
-         </div>
-      </div>
+      <html>
+         <head>
+            <title>Реєстрація - RentCar</title>
+         </head>
+         <body>
+            <div className='container'>
+               <div className='page'>
+                  <h2>Створити обліковий запис</h2>
+                  <form onSubmit={handle_submit}>
+                     <input required value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
+                     <input required value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
+                     <button type='submit'>Зареєструватися</button>
+                  </form>
+               </div>
+            </div>
+         </body>
+      </html>
    )
 }

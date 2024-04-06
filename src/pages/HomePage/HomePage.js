@@ -13,14 +13,21 @@ export const HomePage = () => {
 
     }, [])
     return (
-        <div className="container">
-            <div className="page">
-                <h2>Головна</h2>
-                <h3>Зареєстровані користувачі</h3>
+        <html>
+            <head>
+                <title>Головна - RentCar</title>
+            </head>
+            <body>
                 <div className="container">
-                    {data && <Users database={data}></Users>}
+                    <div className="page">
+                        <h2>Головна</h2>
+                        <h3>Зареєстровані користувачі</h3>
+                        <div className="container">
+                            {data && <Users database={data}></Users>}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </body>
+        </html>
     )
 }

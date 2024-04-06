@@ -1,4 +1,4 @@
 import { HomePage } from "./HomePage";
-import { Users } from "./Users";
+import { Cars } from "./Cars";
 export { HomePage };
-export { Users };
+export { Cars };

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 export const SignupPage = () => {
    const [id, change_id] = useState("");
@@ -27,11 +29,19 @@ export const SignupPage = () => {
          <body>
             <div className='container'>
                <div className='page'>
-                  <h2>Створити обліковий запис</h2>
                   <form onSubmit={handle_submit}>
-                     <input required value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
-                     <input required value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
-                     <button type='submit'>Зареєструватися</button>
+                     <div className='card'>
+                        <div className='card-header'>
+                           <h2>Створити обліковий запис</h2>
+                        </div>
+                        <div className='card-body'>
+                           <input required className='form-control' value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
+                           <input required className='form-control mt-3' value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
+                        </div>
+                        <div className='card-footer'>
+                           <button className='btn btn-primary' type='submit'>Зареєструватися</button>
+                        </div>
+                     </div>
                   </form>
                </div>
             </div>

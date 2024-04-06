@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Users = ({ database }) => {
+export const Cars = ({ database }) => {
     return (
         <div className="container">
             <div className="page">
@@ -10,7 +10,6 @@ export const Users = ({ database }) => {
                             database.map((item=>(
                                 <tr key={item.id}>
                                     <td>{item.id}</td>
-                                    <td>{item.username}</td>
                                 </tr>
                             )))
                         } 

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react"
-import { Users } from "./Users"
+import { Cars } from "./Cars";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 export const HomePage = () => {
     const[data, change_data] = useState(null);
     useEffect(() => {
 
-        fetch("http://localhost:8000/users").then(res => {
+        fetch("http://localhost:8000/cars").then(res => {
             return res.json();
         }).then(result => {
             change_data(result);
@@ -23,7 +25,7 @@ export const HomePage = () => {
                         <h2>Головна</h2>
                         <h3>Зареєстровані користувачі</h3>
                         <div className="container">
-                            {data && <Users database={data}></Users>}
+                            {data && <Cars database={data}></Cars>}
                         </div>
                     </div>
                 </div>

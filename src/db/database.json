@@ -3,6 +3,31 @@
     {
       "id": "default_user",
       "password": "default_password"
+    },
+    {
+      "id": "user",
+      "password": "1234"
+    }
+  ],
+
+  "cars": [
+    {
+      "id": "ford-focus2013",
+      "color": "black",
+      "gearbox": "auto",
+      "fuel-type": "benzine",
+      "model": "Ford Focus",
+      "prod-year": "2013",
+      "price": 450
+    },
+    {
+      "id": "toyota-corolla2019",
+      "color": "white",
+      "gearbox": "mechanic",
+      "fuel-type": "diesel",
+      "model": "Toyota Corolla",
+      "prod-year": "2019",
+      "price": 600
     }
   ]
 }

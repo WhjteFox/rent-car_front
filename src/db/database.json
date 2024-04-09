@@ -12,27 +12,30 @@
     },
     {
       "id": "user",
-      "password": "1234",
-      "access": "user"
+      "password": "1234"
     }
   ],
   "cars": [
     {
       "id": "ford-focus2013",
-      "color": "black",
+      "image": "https://res.cloudinary.com/driveau/image/private/q_auto/v1/ca-s3/2019/04/745739_9945_ford_focus.jpg",
+      "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
-      "model": "Ford Focus",
-      "prod-year": "2013",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": "2013",
       "price": 450
     },
     {
       "id": "toyota-corolla2019",
+      "image": "https://s.auto.drom.ru/i24236/r/photos/1403996/gen448_1460762.jpg",
       "color": "white",
       "gearbox": "mechanic",
       "fuel-type": "diesel",
-      "model": "Toyota Corolla",
-      "prod-year": "2019",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": "2019",
       "price": 600
     }
   ],

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react"
-import { Cars } from "./Cars";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Link, useNavigate } from "react-router-dom";
-
+import { Cars } from "../../components/Cars";
 export const HomePage = () => {
     const[data, change_data] = useState(null);
    

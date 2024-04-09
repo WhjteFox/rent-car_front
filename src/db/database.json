@@ -1,15 +1,21 @@
 {
   "users": [
     {
+      "id": "admin",
+      "password": "admin1234",
+      "access": "admin"
+    },
+    {
       "id": "default_user",
-      "password": "default_password"
+      "password": "default_password",
+      "access": "user"
     },
     {
       "id": "user",
-      "password": "1234"
+      "password": "1234",
+      "access": "user"
     }
   ],
-
   "cars": [
     {
       "id": "ford-focus2013",
@@ -28,6 +34,66 @@
       "model": "Toyota Corolla",
       "prod-year": "2019",
       "price": 600
+    }
+  ],
+  "access_rights": [
+    {
+      "access": "admin",
+      "data": "cars",
+      "can_see": true,
+      "can_edit": true,
+      "can_add": true,
+      "can_delete": true
+    },
+    {
+      "access": "admin",
+      "data": "cars_confidential",
+      "can_see": true,
+      "can_edit": true,
+      "can_add": true,
+      "can_delete": true
+    },
+    {
+      "access": "admin",
+      "data": "users",
+      "can_see": true,
+      "can_edit": true,
+      "can_add": true,
+      "can_delete": true
+    },
+    {
+      "access": "user",
+      "data": "cars",
+      "can_see": true,
+      "can_edit": false,
+      "can_add": false,
+      "can_delete": false
+    },
+    {
+      "access": "user",
+      "data": "cars_confidential",
+      "can_see": false,
+      "can_edit": false,
+      "can_add": false,
+      "can_delete": false
+    },
+    {
+      "access": "user",
+      "data": "users",
+      "can_see": true,
+      "can_edit": true,
+      "can_add": true,
+      "can_delete": false
+    }
+  ],
+  "cars_confidential": [
+    {
+      "id": "ford-focus2013",
+      "number": "КА4623МІ"
+    },
+    {
+      "id": "toyota-corolla2019",
+      "number": "КА3874АЕ"
     }
   ]
 }

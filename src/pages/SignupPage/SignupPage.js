@@ -6,12 +6,13 @@ import "bootstrap/dist/js/bootstrap.min.js";
 export const SignupPage = () => {
    const [id, change_id] = useState("");
    const [password, change_password] = useState("");
+   const access = "user";
    
    const navigate = useNavigate();
    
    const handle_submit = (e) => {
-      let signup_user = {id, password};
-      fetch("http://localhost:8000/users", {
+      let signup_user = {id, password, access};
+      fetch("http://localhost:8001/users", {
          method:"POST",
          headers:{'content-type':'application/json'},
          body: JSON.stringify(signup_user)
@@ -39,7 +40,7 @@ export const SignupPage = () => {
                            <input required className='form-control mt-3' value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
                         </div>
                         <div className='card-footer'>
-                           <button className='btn btn-primary' type='submit'>Зареєструватися</button>
+                           <button className='btn btn-primary btn-lg' type='submit'>Зареєструватися</button>
                         </div>
                      </div>
                   </form>

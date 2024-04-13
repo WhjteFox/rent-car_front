@@ -59,11 +59,11 @@ export const LoginPage = () => {
          <head>
             <title>Увійти - RentCar</title>
          </head>
-         <body>
+         <body className='container'>
             <div className='container'>
                <div className='page'>
                   <form onSubmit={LoginProceed}>
-                     <div className='card'>
+                     <div className='card' data-bs-theme='dark'>
                         <div className='card-header'>
                            <h2>Увійти</h2>
                         </div>

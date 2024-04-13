@@ -29,17 +29,13 @@ export const HomePage = () => {
             <head>
                 <title>Головна - RentCar</title>
             </head>
-            <body>
-                <div>
-                    <Link to={"/login"}>  Вийти</Link>
-                </div>
-                <div className="container">
-                    <div className="page">
-                        <h2>Головна</h2>
-                        <h3>Список автомобілів</h3>
-                        <div className="container">
-                            {data && <Cars database={data}></Cars>}
-                        </div>
+            <body className="container">
+                <div className="page">
+                    <Link to={"/login"}>Вийти</Link>
+                    <h2>Головна</h2>
+                    <h3>Список автомобілів</h3>
+                    <div className="container">
+                        {data && <Cars database={data}></Cars>}
                     </div>
                 </div>
             </body>

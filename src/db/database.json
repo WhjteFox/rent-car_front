@@ -45,7 +45,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Ford",
-      "model": "Ford Fusion",
+      "model": "Fusion",
       "year": "2019",
       "price": 600
     },
@@ -100,7 +100,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Hyundai",
-      "model": "Hyundai Sonata",
+      "model": "Sonata",
       "year": "2016",
       "price": 520
     },
@@ -111,7 +111,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Kia",
-      "model": "Kia Soul",
+      "model": "Soul",
       "year": "2018",
       "price": 490
     },
@@ -122,7 +122,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Ford",
-      "model": "Ford Escape",
+      "model": "Escape",
       "year": "2019",
       "price": 540
     },
@@ -144,7 +144,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Honda",
-      "model": "Honda CR-V",
+      "model": "CR-V",
       "year": "2016",
       "price": 520
     },
@@ -155,7 +155,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Toyota",
-      "model": "Toyota RAV4",
+      "model": "RAV4",
       "year": "2017",
       "price": 580
     },
@@ -166,7 +166,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Nissan",
-      "model": "Nissan Rogue",
+      "model": "Rogue",
       "year": "2018",
       "price": 590
     },
@@ -177,7 +177,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Hyundai",
-      "model": "Hyundai Tucson",
+      "model": "Tucson",
       "year": "2019",
       "price": 620
     },
@@ -188,7 +188,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Kia",
-      "model": "Kia Sportage",
+      "model": "Sportage",
       "year": "2020",
       "price": 650
     },
@@ -232,7 +232,7 @@
       "gearbox": "manual",
       "fuel-type": "diesel",
       "brand": "Honda",
-      "model": "Honda Civic",
+      "model": "Civic",
       "year": "2014",
       "price": 420
     },
@@ -243,7 +243,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Chevrolet",
-      "model": "Chevrolet Malibu",
+      "model": "Malibu",
       "year": "2016",
       "price": 550
     },
@@ -395,16 +395,6 @@
       "can_edit": true,
       "can_add": true,
       "can_delete": false
-    }
-  ],
-  "cars_confidential": [
-    {
-      "id": "ford-focus2013",
-      "number": "КА4623МІ"
-    },
-    {
-      "id": "toyota-corolla2019",
-      "number": "КА3874АЕ"
     }
   ]
 }

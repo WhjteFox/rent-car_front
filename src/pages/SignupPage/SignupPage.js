@@ -27,11 +27,11 @@ export const SignupPage = () => {
          <head>
             <title>Реєстрація - RentCar</title>
          </head>
-         <body>
+         <body className='container'>
             <div className='container'>
                <div className='page'>
                   <form onSubmit={handle_submit}>
-                     <div className='card'>
+                     <div className='card' data-bs-theme='dark'>
                         <div className='card-header'>
                            <h2>Створити обліковий запис</h2>
                         </div>

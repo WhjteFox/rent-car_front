@@ -12,7 +12,8 @@
     },
     {
       "id": "user",
-      "password": "1234"
+      "password": "1234",
+      "access": "user"
     }
   ],
   "cars": [
@@ -56,7 +57,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Chevrolet",
-      "model": "Chevrolet Impala",
+      "model": "Impala",
       "year": "2020",
       "price": 650
     },
@@ -67,7 +68,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Honda",
-      "model": "Honda Accord",
+      "model": "Accord",
       "year": "2015",
       "price": 480
     },
@@ -78,7 +79,7 @@
       "gearbox": "manual",
       "fuel-type": "benzine",
       "brand": "Toyota",
-      "model": "Toyota Corolla",
+      "model": "Corolla",
       "year": "2014",
       "price": 420
     },
@@ -89,7 +90,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Nissan",
-      "model": "Nissan Sentra",
+      "model": "Sentra",
       "year": "2017",
       "price": 460
     },
@@ -133,7 +134,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Chevrolet",
-      "model": "Chevrolet Equinox",
+      "model": "Equinox",
       "year": "2020",
       "price": 570
     },
@@ -199,7 +200,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Ford",
-      "model": "Ford Edge",
+      "model": "Edge",
       "year": "2017",
       "price": 580
     },
@@ -210,7 +211,7 @@
       "gearbox": "auto",
       "fuel-type": "benzine",
       "brand": "Chevrolet",
-      "model": "Chevrolet Traverse",
+      "model": "Traverse",
       "year": "2018",
       "price": 600
     },
@@ -221,7 +222,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Toyota",
-      "model": "Toyota Camry",
+      "model": "Camry",
       "year": "2015",
       "price": 500
     },
@@ -254,7 +255,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Nissan",
-      "model": "Nissan Altima",
+      "model": "Altima",
       "year": "2017",
       "price": 560
     },
@@ -265,7 +266,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Hyundai",
-      "model": "Hyundai Elantra",
+      "model": "Elantra",
       "year": "2015",
       "price": 490
     },
@@ -276,7 +277,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Kia",
-      "model": "Kia Optima",
+      "model": "Optima",
       "year": "2018",
       "price": 580
     },
@@ -287,7 +288,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Volkswagen",
-      "model": "Volkswagen Jetta",
+      "model": "Jetta",
       "year": "2019",
       "price": 620
     },
@@ -298,7 +299,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "BMW",
-      "model": "BMW 320d",
+      "model": "320d",
       "year": "2020",
       "price": 680
     },
@@ -309,7 +310,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Audi",
-      "model": "Audi A3",
+      "model": "A3",
       "year": "2019",
       "price": 670
     },
@@ -320,7 +321,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Mercedes",
-      "model": "Mercedes C220",
+      "model": "C220",
       "year": "2018",
       "price": 650
     },
@@ -331,7 +332,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Renault",
-      "model": "Renault Megane",
+      "model": "Megane",
       "year": "2019",
       "price": 640
     },
@@ -342,7 +343,7 @@
       "gearbox": "auto",
       "fuel-type": "diesel",
       "brand": "Volvo",
-      "model": "Volvo S60",
+      "model": "S60",
       "year": "2018",
       "price": 670
     }

@@ -7,7 +7,6 @@ const CardInfo = ({ color, brand, model, price, year }) => {
             <h5>Колір: {color}</h5>
             <h5>Марка: {brand}</h5>
             <h2>Модель: {model}</h2>
-            <h2>Ціна оренди: ${price}/міс.</h2>
             <h2>Рік випуску: {year}</h2>    
         </div>
     );

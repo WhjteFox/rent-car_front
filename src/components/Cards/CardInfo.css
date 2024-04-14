@@ -1,47 +1,45 @@
 .card-info {
-  padding: 10px;
-  text-align: right;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: 35px;
-  height: 100px;
-}
+    padding: 10px;
+    padding-left: 30px;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: auto;
+    width: 93%;
+  }
+  
+  .card-info h2 {
+    margin: 0;
+    font-size: 28px;
+    color: rgb(200, 200, 200);
+    padding-bottom: 4px;
+    padding-bottom: 10px;
+  }
+  
+  .year {
+    margin: 0;
+    font-size: 26px;
+    color: rgb(200, 200, 200);
+    text-align: right;
+    padding-right: 8px;
+  }
 
-.card-info h2 {
-  margin: 0;
-  font-size: 36px;
-  color: rgb(200, 200, 200);
-  padding-bottom: 4px;
-  padding-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.year {
-  margin: 0;
-  font-size: 28px;
-  color: #000000;
-  text-align: right;
-  padding-right: 8px;
-}
-
-.card-info h5 {
-  margin: 0;
-  font-size: 36px;
-  color: rgb(200, 200, 200);
-  padding-bottom: 4px;
-  padding-bottom: 10px;
-  letter-spacing: 1px;
-
-}
-
-.card-header span:last-child {
-  margin-right: 0;
-}
-
-.price {
-  text-align: left;
-  position: absolute;
-  font-size: 25px;
-  color: rgb(160, 161, 81);
-  margin-bottom: 100px;
-}
+  .price {
+    color: rgb(255, 192, 91);
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 38px;
+  }
+  
+  .card-info h5 {
+    margin: 0;
+    font-size: 28px;
+    color: rgb(200, 200, 200);
+    padding-bottom: 4px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .card-header span:last-child {
+    margin-right: 0;
+  }

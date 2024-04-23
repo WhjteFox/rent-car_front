@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
+import './SignupPage.css';
 export const SignupPage = () => {
    const [id, change_id] = useState("");
    const [password, change_password] = useState("");

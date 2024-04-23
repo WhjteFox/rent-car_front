@@ -26,7 +26,8 @@
       "brand": "Ford",
       "model": "Focus",
       "year": "2013",
-      "price": 450
+      "price": 450,
+      "category": "category1"
     },
     {
       "id": "toyota-corolla2019",
@@ -37,7 +38,8 @@
       "brand": "Toyota",
       "model": "Corolla",
       "year": "2019",
-      "price": 600
+      "price": 600,
+      "category": "category1"
     },
     {
       "id": "ford-fusion2019",
@@ -48,7 +50,8 @@
       "brand": "Ford",
       "model": "Fusion",
       "year": "2019",
-      "price": 600
+      "price": 600,
+      "category": "category1"
     },
     {
       "id": "chevrolet-impala2020",
@@ -59,7 +62,8 @@
       "brand": "Chevrolet",
       "model": "Impala",
       "year": "2020",
-      "price": 650
+      "price": 650,
+      "category": "category1"
     },
     {
       "id": "honda-accord2015",
@@ -70,7 +74,8 @@
       "brand": "Honda",
       "model": "Accord",
       "year": "2015",
-      "price": 480
+      "price": 480,
+      "category": "category1"
     },
     {
       "id": "toyota-corolla2014",
@@ -81,7 +86,8 @@
       "brand": "Toyota",
       "model": "Corolla",
       "year": "2014",
-      "price": 420
+      "price": 420,
+      "category": "category2"
     },
     {
       "id": "nissan-sentra2017",
@@ -92,7 +98,8 @@
       "brand": "Nissan",
       "model": "Sentra",
       "year": "2017",
-      "price": 460
+      "price": 460,
+      "category": "category1"
     },
     {
       "id": "hyundai-sonata2016",
@@ -103,7 +110,8 @@
       "brand": "Hyundai",
       "model": "Sonata",
       "year": "2016",
-      "price": 520
+      "price": 520,
+      "category": "category1"
     },
     {
       "id": "kia-soul2018",
@@ -114,7 +122,8 @@
       "brand": "Kia",
       "model": "Soul",
       "year": "2018",
-      "price": 490
+      "price": 490,
+      "category": "category3"
     },
     {
       "id": "ford-escape2019",
@@ -125,7 +134,8 @@
       "brand": "Ford",
       "model": "Escape",
       "year": "2019",
-      "price": 540
+      "price": 540,
+      "category": "category4"
     },
     {
       "id": "chevrolet-equinox2020",
@@ -136,7 +146,8 @@
       "brand": "Chevrolet",
       "model": "Equinox",
       "year": "2020",
-      "price": 570
+      "price": 570,
+      "category": "category4"
     },
     {
       "id": "honda-cr-v2016",
@@ -147,7 +158,8 @@
       "brand": "Honda",
       "model": "CR-V",
       "year": "2016",
-      "price": 520
+      "price": 520,
+      "category": "category4"
     },
     {
       "id": "toyota-rav42017",
@@ -158,7 +170,8 @@
       "brand": "Toyota",
       "model": "RAV4",
       "year": "2017",
-      "price": 580
+      "price": 580,
+      "category": "category2"
     },
     {
       "id": "nissan-rogue2018",
@@ -169,7 +182,8 @@
       "brand": "Nissan",
       "model": "Rogue",
       "year": "2018",
-      "price": 590
+      "price": 590,
+      "category": "category2"
     },
     {
       "id": "hyundai-tucson2019",
@@ -180,7 +194,8 @@
       "brand": "Hyundai",
       "model": "Tucson",
       "year": "2019",
-      "price": 620
+      "price": 620,
+      "category": "category3"
     },
     {
       "id": "kia-sportage2020",
@@ -191,7 +206,8 @@
       "brand": "Kia",
       "model": "Sportage",
       "year": "2020",
-      "price": 650
+      "price": 650,
+      "category": "category4"
     },
     {
       "id": "ford-edge2017",
@@ -202,7 +218,8 @@
       "brand": "Ford",
       "model": "Edge",
       "year": "2017",
-      "price": 580
+      "price": 580,
+      "category": "category3"
     },
     {
       "id": "chevrolet-traverse2018",
@@ -213,7 +230,8 @@
       "brand": "Chevrolet",
       "model": "Traverse",
       "year": "2018",
-      "price": 600
+      "price": 600,
+      "category": "category3"
     },
     {
       "id": "toyota-camry2015",
@@ -224,7 +242,8 @@
       "brand": "Toyota",
       "model": "Camry",
       "year": "2015",
-      "price": 500
+      "price": 500,
+      "category": "category3"
     },
     {
       "id": "honda-civic2014",
@@ -235,7 +254,8 @@
       "brand": "Honda",
       "model": "Civic",
       "year": "2014",
-      "price": 420
+      "price": 420,
+      "category": "category3"
     },
     {
       "id": "chevrolet-malibu2016",
@@ -246,7 +266,8 @@
       "brand": "Chevrolet",
       "model": "Malibu",
       "year": "2016",
-      "price": 550
+      "price": 550,
+      "category": "category3"
     },
     {
       "id": "nissan-altima2017",
@@ -257,7 +278,8 @@
       "brand": "Nissan",
       "model": "Altima",
       "year": "2017",
-      "price": 560
+      "price": 560,
+      "category": "category3"
     },
     {
       "id": "hyundai-elantra2015",
@@ -268,7 +290,8 @@
       "brand": "Hyundai",
       "model": "Elantra",
       "year": "2015",
-      "price": 490
+      "price": 490,
+      "category": "category3"
     },
     {
       "id": "kia-optima2018",
@@ -279,7 +302,8 @@
       "brand": "Kia",
       "model": "Optima",
       "year": "2018",
-      "price": 580
+      "price": 580,
+      "category": "category1"
     },
     {
       "id": "volkswagen-jetta2019",
@@ -290,7 +314,8 @@
       "brand": "Volkswagen",
       "model": "Jetta",
       "year": "2019",
-      "price": 620
+      "price": 620,
+      "category": "category1"
     },
     {
       "id": "bmw-320d2020",
@@ -301,7 +326,8 @@
       "brand": "BMW",
       "model": "320d",
       "year": "2020",
-      "price": 680
+      "price": 680,
+      "category": "category5"
     },
     {
       "id": "audi-a32019",
@@ -312,7 +338,8 @@
       "brand": "Audi",
       "model": "A3",
       "year": "2019",
-      "price": 670
+      "price": 670,
+      "category": "category5"
     },
     {
       "id": "mercedes-c2202018",
@@ -323,7 +350,8 @@
       "brand": "Mercedes",
       "model": "C220",
       "year": "2018",
-      "price": 650
+      "price": 650,
+      "category": "category5"
     },
     {
       "id": "renault-megane2019",
@@ -334,7 +362,8 @@
       "brand": "Renault",
       "model": "Megane",
       "year": "2019",
-      "price": 640
+      "price": 640,
+      "category": "category5"
     },
     {
       "id": "volvo-s602018",
@@ -345,7 +374,9 @@
       "brand": "Volvo",
       "model": "S60",
       "year": "2018",
-      "price": 670
+      "price": 670,
+      "category": "category5"
+      
     }
   ],
   "access_rights": [

@@ -1,0 +1,60 @@
+/* body {
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 50%, rgba(255,255,255,1) 50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    background: white;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 19px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.card-footer {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}  */

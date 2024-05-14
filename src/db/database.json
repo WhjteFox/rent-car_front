@@ -19,7 +19,7 @@
   "cars": [
     {
       "id": "ford-focus2013",
-      "image": "./image/ford-focus2013.jpg",
+      "image": "./image/ford-focus2013.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -32,7 +32,7 @@
     },
     {
       "id": "toyota-corolla2019",
-      "image": "./image/toyota-corolla2019.jpg",
+      "image": "./image/toyota-corolla2019.png",
       "color": "white",
       "gearbox": "mechanic",
       "fuel-type": "diesel",
@@ -71,7 +71,7 @@
     },
     {
       "id": "honda-accord2015",
-      "image": "./image/honda-accord2015.jpg",
+      "image": "./image/honda-accord2015.png",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -97,7 +97,7 @@
     },
     {
       "id": "nissan-sentra2017",
-      "image": "./image/nissan-sentra2017.jpg",
+      "image": "./image/nissan-sentra2017.png",
       "color": "light black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -123,7 +123,7 @@
     },
     {
       "id": "kia-soul2018",
-      "image": "./image/kia-soul2018.jpg",
+      "image": "./image/kia-soul2018.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -136,7 +136,7 @@
     },
     {
       "id": "ford-escape2019",
-      "image": "./image/ford-escape2019.jpg",
+      "image": "./image/ford-escape2019.png",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -162,7 +162,7 @@
     },
     {
       "id": "honda-cr-v2016",
-      "image": "./image/honda-cr-v2016.jpg",
+      "image": "./image/honda-cr-v2016.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -175,7 +175,7 @@
     },
     {
       "id": "toyota-rav42017",
-      "image": "./image/toyota-rav42017.jpg",
+      "image": "./image/toyota-rav42017.png",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -188,7 +188,7 @@
     },
     {
       "id": "nissan-rogue2018",
-      "image": "./image/nissan-rogue2018.jpg",
+      "image": "./image/nissan-rogue2018.png",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -201,7 +201,7 @@
     },
     {
       "id": "hyundai-tucson2019",
-      "image": "./image/hyundai-tucson2019.jpg",
+      "image": "./image/hyundai-tucson2019.png",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -214,7 +214,7 @@
     },
     {
       "id": "kia-sportage2020",
-      "image": "./image/kia-sportage2020.jpg",
+      "image": "./image/kia-sportage2020.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -227,7 +227,7 @@
     },
     {
       "id": "ford-edge2017",
-      "image": "./image/ford-edge2017.jpg",
+      "image": "./image/ford-edge2017.png",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -240,7 +240,7 @@
     },
     {
       "id": "chevrolet-traverse2018",
-      "image": "./image/chevrolet-traverse2018.jpg",
+      "image": "./image/chevrolet-traverse2018.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -266,7 +266,7 @@
     },
     {
       "id": "honda-civic2014",
-      "image": "./image/honda-civic2014.jpg",
+      "image": "./image/honda-civic2014.png",
       "color": "blue",
       "gearbox": "manual",
       "fuel-type": "diesel",
@@ -292,7 +292,7 @@
     },
     {
       "id": "nissan-altima2017",
-      "image": "./image/nissan-altima2017.jpg",
+      "image": "./image/nissan-altima2017.png",
       "color": "silver",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -305,7 +305,7 @@
     },
     {
       "id": "hyundai-elantra2015",
-      "image": "./image/hyundai-elantra2015.jpeg",
+      "image": "./image/hyundai-elantra2015.png",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -318,7 +318,7 @@
     },
     {
       "id": "kia-optima2018",
-      "image": "./image/kia-optima2018.jpg",
+      "image": "./image/kia-optima2018.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -331,7 +331,7 @@
     },
     {
       "id": "volkswagen-jetta2019",
-      "image": "./image/volkswagen-jetta2019.jpg",
+      "image": "./image/volkswagen-jetta2019.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -357,7 +357,7 @@
     },
     {
       "id": "audi-a32019",
-      "image": "./image/audi-a32019.jpg",
+      "image": "./image/audi-a32019.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -370,7 +370,7 @@
     },
     {
       "id": "mercedes-c2202018",
-      "image": "./image/mercedes-c2202018.jpg",
+      "image": "./image/mercedes-c2202018.png",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -383,7 +383,7 @@
     },
     {
       "id": "renault-megane2019",
-      "image": "./image/renault-megane2019.jpg",
+      "image": "./image/renault-megane2019.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -396,7 +396,7 @@
     },
     {
       "id": "volvo-s602018",
-      "image": "./image/volvo-s602018.jpg",
+      "image": "./image/volvo-s602018.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "diesel",

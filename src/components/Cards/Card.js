@@ -11,6 +11,7 @@ const Card = ({ car }) => {
             </div>
             <div className='card-content'>
                 <img src={car.image} alt={car.model} />
+                <div className='empty'></div>
                 <CardInfo color={car.color} brand={car.brand} model={car.model} price={car.price} year={car.year} />
             </div>
             <div className='card-bottom'>

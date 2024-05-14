@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardInfo from './CardInfo.js';
+import InfoModal from './InfoModal.js';
 import './Card.css';
 import './CardButtonPanel.css';
 
 const Card = ({ car }) => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleInfoClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <div className='card-container'>
             <div className='card-head'>
@@ -12,7 +23,7 @@ const Card = ({ car }) => {
             <div className='card-content'>
                 <img src={car.image} alt={car.model} />
                 <div className='empty'></div>
-                <CardInfo color={car.color} brand={car.brand} model={car.model} price={car.price} year={car.year} />
+                <CardInfo color={car.color} brand={car.brand} model={car.model} price={car.price} year={car.year} fuel_type={car.fuel_type} gearbox={car.gearbox} wheeldrive={car.wheeldrive} enginesize={car.enginesize} gasoline={car.gasoline} />
             </div>
             <div className='card-bottom'>
                 <span className='price'>Від {car.price}$/день</span>
@@ -21,11 +32,11 @@ const Card = ({ car }) => {
                         <div className='button-content'>
                             <div className='button-icon'>
                                 <img src={require('../image/icons/heart_red_outline.png')} alt='' />
-                                <img className='img-hover' src={require('../image/icons/heart_black_outline.png')} alt=''  />
+                                <img className='img-hover' src={require('../image/icons/heart_black_outline.png')} alt='' />
                             </div>
                         </div>
                     </button>
-                    <button className='button-yellow'>
+                    <button className='button-yellow' onClick={handleInfoClick}>
                         <div className='button-content'>
                             <div className='button-icon'>
                                 <img src={require('../image/icons/info_yellow.png')} alt='' />
@@ -45,6 +56,8 @@ const Card = ({ car }) => {
                     </button>
                 </div>
             </div>
+
+            <InfoModal car={car} showModal={showModal} handleClose={handleCloseModal} />
         </div>
     );
 }

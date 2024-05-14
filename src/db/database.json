@@ -20,6 +20,9 @@
     {
       "id": "ford-focus2013",
       "image": "./image/ford-focus2013.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -28,11 +31,17 @@
       "year": "2013",
       "class price": "econom",
       "price": 30,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.6",
+      "gasoline": "7.8 л/100 км"
     },
     {
       "id": "toyota-corolla2019",
       "image": "./image/toyota-corolla2019.png",
+      "color": "white",
+      "gearbox": "Полуавтоматчна",
+      "fuel_type": "Дизель",
       "color": "білий",
       "gearbox": "механічна",
       "fuel-type": "дизельне паливо",
@@ -41,11 +50,17 @@
       "year": "2019",
       "class price": "medium",
       "price": 40,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.8",
+      "gasoline": "6.7 л/100 км"
     },
     {
       "id": "ford-fusion2019",
       "image": "./image/ford-fusion2019.png",
+      "color": "white",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "білий",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -54,11 +69,17 @@
       "year": "2019",
       "class price": "business",
       "price": 50,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.5",
+      "gasoline": "8.5 л/100 км"
     },
     {
       "id": "chevrolet-impala2020",
       "image": "./image/chevrolet-impala2020.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -67,11 +88,17 @@
       "year": "2020",
       "class price": "premium",
       "price": 60,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "3.6",
+      "gasoline": "9.8 л/100 км"
     },
     {
       "id": "honda-accord2015",
       "image": "./image/honda-accord2015.png",
+      "color": "blue",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "синій",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -80,11 +107,17 @@
       "year": "2015",
       "class price": "medium",
       "price": 40,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.4",
+      "gasoline": " 7.6 л/100 км"
     },
     {
       "id": "toyota-corolla2014",
       "image": "./image/toyota-corolla2014.png",
+      "color": "dark",
+      "gearbox": "Механічна",
+      "fuel_type": "Бензин",
       "color": "чорний",
       "gearbox": "механічна",
       "fuel-type": "бензин",
@@ -93,11 +126,17 @@
       "year": "2014",
       "class price": "econom",
       "price": 30,
-      "category": "category2"
+      "category": "category2",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.8",
+      "gasoline": "6.5 л/100 км"
     },
     {
       "id": "nissan-sentra2017",
       "image": "./image/nissan-sentra2017.png",
+      "color": "light black",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "сріблястий",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -106,11 +145,17 @@
       "year": "2017",
       "class price": "econom",
       "price": 30,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.8",
+      "gasoline": "7.2 л/100 км"
     },
     {
       "id": "hyundai-sonata2016",
       "image": "./image/hyundai-sonata2016.png",
+      "color": "black",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "чорний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -119,11 +164,17 @@
       "year": "2016",
       "class price": "medium",
       "price": 40,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.4",
+      "gasoline": "8.1 л/100 км"
     },
     {
       "id": "kia-soul2018",
       "image": "./image/kia-soul2018.png",
+      "color": "white",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "білий",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -132,11 +183,17 @@
       "year": "2018",
       "class price": "medium",
       "price": 40,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.0",
+      "gasoline": "7.8 л/100 км"
     },
     {
       "id": "ford-escape2019",
       "image": "./image/ford-escape2019.png",
+      "color": "blue",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "синій",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -145,11 +202,17 @@
       "year": "2019",
       "class price": "business",
       "price": 50,
-      "category": "category4"
+      "category": "category4",
+      "wheeldrive": "Повний привід",
+      "enginesize": "1.5",
+      "gasoline": "8.0 л/100 км"
     },
     {
       "id": "chevrolet-equinox2020",
       "image": "./image/chevrolet-equinox2020.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -158,11 +221,17 @@
       "year": "2020",
       "class price": "business",
       "price": 50,
-      "category": "category4"
+      "category": "category4",
+      "wheeldrive": "Повний привід",
+      "enginesize": "1.5",
+      "gasoline": "8.3 л/100 км"
     },
     {
       "id": "honda-cr-v2016",
       "image": "./image/honda-cr-v2016.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -171,11 +240,17 @@
       "year": "2016",
       "class price": "business",
       "price": 50,
-      "category": "category4"
+      "category": "category4",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.4",
+      "gasoline": "7.8 л/100 км"
     },
     {
       "id": "toyota-rav42017",
       "image": "./image/toyota-rav42017.png",
+      "color": "black",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "чорний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -184,11 +259,17 @@
       "year": "2017",
       "class price": "business",
       "price": 50,
-      "category": "category2"
+      "category": "category2",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.5",
+      "gasoline": "8.0 л/100 км"
     },
     {
       "id": "nissan-rogue2018",
       "image": "./image/nissan-rogue2018.png",
+      "color": "blue",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "синій",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -197,11 +278,17 @@
       "year": "2018",
       "class price": "premium",
       "price": 60,
-      "category": "category2"
+      "category": "category2",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.5",
+      "gasoline": "7.6   л/100 км"
     },
     {
       "id": "hyundai-tucson2019",
       "image": "./image/hyundai-tucson2019.png",
+      "color": "gray",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "сріблястий",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -210,11 +297,17 @@
       "year": "2019",
       "class price": "business",
       "price": 50,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.0",
+      "gasoline": "8.4 л/100 км"
     },
     {
       "id": "kia-sportage2020",
       "image": "./image/kia-sportage2020.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -223,11 +316,17 @@
       "year": "2020",
       "class price": "premium",
       "price": 60,
-      "category": "category4"
+      "category": "category4",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.4",
+      "gasoline": "8.1 л/100 км"
     },
     {
       "id": "ford-edge2017",
       "image": "./image/ford-edge2017.png",
+      "color": "black",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "чорний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -236,11 +335,17 @@
       "year": "2017",
       "class price": "premium",
       "price": 60,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.0",
+      "gasoline": "9.8 л/100 км"
     },
     {
       "id": "chevrolet-traverse2018",
       "image": "./image/chevrolet-traverse2018.png",
+      "color": "white",
+      "gearbox": "Автоматична",
+      "fuel_type": "Бензин",
       "color": "темно-червоний",
       "gearbox": "автоматична",
       "fuel-type": "бензин",
@@ -249,7 +354,10 @@
       "year": "2018",
       "class price": "luxury",
       "price": 70,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "3.6",
+      "gasoline": "10.8 л/100 км"
     },
     {
       "id": "toyota-camry2015",
@@ -262,11 +370,17 @@
       "year": "2015",
       "class price": "medium",
       "price": 40,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.5",
+      "gasoline": "8.2 л/100 км"
     },
     {
       "id": "honda-civic2014",
       "image": "./image/honda-civic2014.png",
+      "color": "blue",
+      "gearbox": "Механічна",
+      "fuel_type": "Дизель",
       "color": "синій",
       "gearbox": "механічна",
       "fuel-type": "дизельне паливо",
@@ -275,11 +389,17 @@
       "year": "2014",
       "class price": "econom",
       "price": 30,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.8",
+      "gasoline": "6.8 л/100 км"
     },
     {
       "id": "chevrolet-malibu2016",
       "image": "./image/chevrolet-malibu2016.png",
+      "color": "black",
+      "gearbox": "Автоматична",
+      "fuel_type": "Дизель",
       "color": "чорний",
       "gearbox": "автоматична",
       "fuel-type": "дизельне паливо",
@@ -288,7 +408,10 @@
       "year": "2016",
       "class price": "medium",
       "price": 40,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "2.5",
+      "gasoline": "8.4 л/100 км"
     },
     {
       "id": "nissan-altima2017",
@@ -301,7 +424,10 @@
       "year": "2017",
       "class price": "medium",
       "price": 40,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.5",
+      "gasoline": "7.5 л/100 км"
     },
     {
       "id": "hyundai-elantra2015",
@@ -314,7 +440,10 @@
       "year": "2015",
       "class price": "econom",
       "price": 30,
-      "category": "category3"
+      "category": "category3",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.8",
+      "gasoline": "7.1 л/100 км"
     },
     {
       "id": "kia-optima2018",
@@ -327,7 +456,10 @@
       "year": "2018",
       "class price": "business",
       "price": 50,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.4",
+      "gasoline": "8.1 л/100 км"
     },
     {
       "id": "volkswagen-jetta2019",
@@ -340,7 +472,10 @@
       "year": "2019",
       "class price": "medium",
       "price": 40,
-      "category": "category1"
+      "category": "category1",
+      "wheeldrive": "Передній привід",
+      "enginesize": "1.4",
+      "gasoline": "6.8 л/100 км"
     },
     {
       "id": "bmw-320d2020",
@@ -353,7 +488,10 @@
       "year": "2020",
       "class price": "luxury",
       "price": 70,
-      "category": "category5"
+      "category": "category5",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.0",
+      "gasoline": "4.3 л/100 км"
     },
     {
       "id": "audi-a32019",
@@ -366,7 +504,10 @@
       "year": "2019",
       "class price": "luxury",
       "price": 70,
-      "category": "category5"
+      "category": "category5",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.0",
+      "gasoline": "6.2 л/100 км"
     },
     {
       "id": "mercedes-c2202018",
@@ -379,7 +520,10 @@
       "year": "2018",
       "class price": "luxury",
       "price": 70,
-      "category": "category5"
+      "category": "category5",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.1",
+      "gasoline": "5.1 л/100 км"
     },
     {
       "id": "renault-megane2019",
@@ -392,11 +536,17 @@
       "year": "2019",
       "class price": "medium",
       "price": 40,
-      "category": "category5"
+      "category": "category5",
+      "wheeldrive": "Повний привід",
+      "enginesize": "1.3",
+      "gasoline": "6.2 л/100 км"
     },
     {
       "id": "volvo-s602018",
       "image": "./image/volvo-s602018.png",
+      "color": "red",
+      "gearbox": "Автоматична",
+      "fuel_type": "Дизель",
       "color": "червоний",
       "gearbox": "автоматична",
       "fuel-type": "дизельне паливо",
@@ -405,7 +555,10 @@
       "year": "2018",
       "class price": "premium",
       "price": 60,
-      "category": "category5"
+      "category": "category5",
+      "wheeldrive": "Повний привід",
+      "enginesize": "2.0",
+      "gasoline": "7.0 л/100 км"
     }
   ],
   "access_rights": [

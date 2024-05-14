@@ -7,7 +7,7 @@ import { Cars } from "../../components/Cars";
 export const HomePage = () => {
     const [data, change_data] = useState(null);
     const [filteredData, setFilteredData] = useState(null);
-    let [setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
     const [selectedPriceRange, setSelectedPriceRange] = useState("");
 
@@ -31,15 +31,23 @@ export const HomePage = () => {
     }, [navigate]);
 
     const handleSearch = (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        setSearchTerm(searchTerm);
-        const filtered = data.filter(
-            (car) =>
+        e.preventDefault();
+        setSearchTerm(e.target.value.toLowerCase());
+
+    };
+
+    useEffect(() => {
+        if (searchTerm === null || searchTerm.length === 0) {
+            setFilteredData(data);
+        }
+        else if (searchTerm.length >= 1) {
+            const filtered = data.filter((car) =>
                 car.brand.toLowerCase().includes(searchTerm) ||
                 car.model.toLowerCase().includes(searchTerm)
-        );
-        setFilteredData(filtered);
-    };
+            );
+            setFilteredData(filtered);
+        }
+    }, [searchTerm, data]);
 
     const handleFilter = () => {
         let filtered = data;
@@ -53,7 +61,6 @@ export const HomePage = () => {
                 (car) => car["class price"] === selectedPriceRange
             );
         }
-
         setFilteredData(filtered);
     };
 

@@ -14,7 +14,7 @@ const Card = ({ car }) => {
                 <CardInfo color={car.color} brand={car.brand} model={car.model} price={car.price} year={car.year} />
             </div>
             <div className='card-bottom'>
-                <span className='price'>Від ${car.price}/міс.</span>
+                <span className='price'>Від {car.price}$/день</span>
                 <div className='button-panel'>
                     <button className='button-red'>
                         <div className='button-content'>

@@ -19,7 +19,7 @@
   "cars": [
     {
       "id": "ford-focus2013",
-      "image": "https://res.cloudinary.com/driveau/image/private/q_auto/v1/ca-s3/2019/04/745739_9945_ford_focus.jpg",
+      "image": "./image/ford-focus2013.jpg",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -32,7 +32,7 @@
     },
     {
       "id": "toyota-corolla2019",
-      "image": "https://img.automoto.ua/overview/toyota-corolla-2019-33e-huge-1276.jpg",
+      "image": "./image/toyota-corolla2019.jpg",
       "color": "white",
       "gearbox": "mechanic",
       "fuel-type": "diesel",
@@ -45,7 +45,7 @@
     },
     {
       "id": "ford-fusion2019",
-      "image": "https://i.infocar.ua/i/2/5884/112933/1920x.jpg",
+      "image": "./image/ford-fusion2019.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -58,7 +58,7 @@
     },
     {
       "id": "chevrolet-impala2020",
-      "image": "https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/GM%20US/2020%20Chevrolet%20Impala/ImpalaContentPhoto.jpg",
+      "image": "./image/chevrolet-impala2020.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -71,7 +71,7 @@
     },
     {
       "id": "honda-accord2015",
-      "image": "https://i.infocar.ua/i/12/5212/1400x936.jpg",
+      "image": "./image/honda-accord2015.jpg",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -84,7 +84,7 @@
     },
     {
       "id": "toyota-corolla2014",
-      "image": "https://s.auto.drom.ru/i24225/r/photos/89809/big_1377982.jpg",
+      "image": "./image/toyota-corolla2014.png",
       "color": "dark",
       "gearbox": "manual",
       "fuel-type": "benzine",
@@ -97,7 +97,7 @@
     },
     {
       "id": "nissan-sentra2017",
-      "image": "https://hips.hearstapps.com/autoweek/assets/s3fs-public/EMBARGOED%252520UNTIL%252520NOV%25252015%252520at%2525201230pm%252520PST%252520-%2525202017%252520Nissan%252520Sentra%252520NISMO%252520photo%2525201.jpg",
+      "image": "./image/nissan-sentra2017.jpg",
       "color": "light black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -110,7 +110,7 @@
     },
     {
       "id": "hyundai-sonata2016",
-      "image": "https://carat.org.ua/wp-content/uploads/2020/10/screenshot_20201005-094207.jpg",
+      "image": "./image/hyundai-sonata2016.png",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -123,7 +123,7 @@
     },
     {
       "id": "kia-soul2018",
-      "image": "https://roadres.com/gallery/2016/07/foto-soul-2_401.jpg",
+      "image": "./image/kia-soul2018.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -136,7 +136,7 @@
     },
     {
       "id": "ford-escape2019",
-      "image": "https://s.auto.drom.ru/i24252/c/photos/fullsize/ford/escape/ford_escape_990814.jpg",
+      "image": "./image/ford-escape2019.jpg",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -149,7 +149,7 @@
     },
     {
       "id": "chevrolet-equinox2020",
-      "image": "https://i.infocar.ua/i/2/5179/102111/1920x.jpg",
+      "image": "./image/chevrolet-equinox2020.png",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -162,7 +162,7 @@
     },
     {
       "id": "honda-cr-v2016",
-      "image": "https://cdntdreditorials2.azureedge.net/cache/9/b/4/c/1/b/9b4c1b3ad66aaf232e17a42801b0bb68e7e25c4e.jpg",
+      "image": "./image/honda-cr-v2016.jpg",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -175,7 +175,7 @@
     },
     {
       "id": "toyota-rav42017",
-      "image": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/toyota-rav4-2017-black-1.jpg",
+      "image": "./image/toyota-rav42017.jpg",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -188,7 +188,7 @@
     },
     {
       "id": "nissan-rogue2018",
-      "image": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/media/672264/2018-nissan-rogue-in-depth-model-review-car-and-driver-photo-695725-s-original.jpg",
+      "image": "./image/nissan-rogue2018.jpg",
       "color": "blue",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -201,7 +201,7 @@
     },
     {
       "id": "hyundai-tucson2019",
-      "image": "https://i.infocar.ua/i/2/5582/103023/1920x.jpg",
+      "image": "./image/hyundai-tucson2019.jpg",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -214,7 +214,7 @@
     },
     {
       "id": "kia-sportage2020",
-      "image": "https://cdn.motor1.com/images/mgl/82zee/s3/2020-kia-sportage.jpg",
+      "image": "./image/kia-sportage2020.jpg",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -227,7 +227,7 @@
     },
     {
       "id": "ford-edge2017",
-      "image": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/media/672263/2017-ford-edge-in-depth-model-review-car-and-driver-photo-685894-s-original.jpg?crop=0.720xw:0.588xh;0.174xw,0.199xh&resize=1200:*",
+      "image": "./image/ford-edge2017.jpg",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -240,7 +240,7 @@
     },
     {
       "id": "chevrolet-traverse2018",
-      "image": "https://cdn.carbuzz.com/gallery-images/1600/362000/900/362982.jpg",
+      "image": "./image/chevrolet-traverse2018.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "benzine",
@@ -253,7 +253,7 @@
     },
     {
       "id": "toyota-camry2015",
-      "image": "https://s.auto.drom.ru/i24214/r/photos/594627/big_1267269.jpg",
+      "image": "./image/toyota-camry2015.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -266,7 +266,7 @@
     },
     {
       "id": "honda-civic2014",
-      "image": "https://hips.hearstapps.com/autoweek/assets/s3fs-public/2014_Civic_Sedan_26.jpg?resize=980:*",
+      "image": "./image/honda-civic2014.jpg",
       "color": "blue",
       "gearbox": "manual",
       "fuel-type": "diesel",
@@ -279,7 +279,7 @@
     },
     {
       "id": "chevrolet-malibu2016",
-      "image": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/1078702682/1ba7ffb9-36ee-40e8-97ad-791ec4b13f7c/89f83955-99bb-4d38-9ea2-e9dcbef0049b/1280x720/match/image.jpg",
+      "image": "./image/chevrolet-malibu2016.png",
       "color": "black",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -292,7 +292,7 @@
     },
     {
       "id": "nissan-altima2017",
-      "image": "https://img.automoto.ua/overview/nissan-altima-2017-557-huge-941.jpg",
+      "image": "./image/nissan-altima2017.jpg",
       "color": "silver",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -305,7 +305,7 @@
     },
     {
       "id": "hyundai-elantra2015",
-      "image": "https://images.ctfassets.net/c9t6u0qhbv9e/2015HyundaiElantraTestDriveReviewsummary/f90e16969e4dfc02b166e2a23746ff50/2015_Hyundai_Elantra_Test_Drive_Review_summaryImage.jpeg",
+      "image": "./image/hyundai-elantra2015.jpeg",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -318,7 +318,7 @@
     },
     {
       "id": "kia-optima2018",
-      "image": "https://s.auto.drom.ru/i24226/r/photos/1281024/big_1394283.jpg",
+      "image": "./image/kia-optima2018.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -331,7 +331,7 @@
     },
     {
       "id": "volkswagen-jetta2019",
-      "image": "https://www.digitaltrends.com/wp-content/uploads/2019/03/2019-volkswagen-jetta-full-review-13.jpg?p=1",
+      "image": "./image/volkswagen-jetta2019.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -344,7 +344,7 @@
     },
     {
       "id": "bmw-320d2020",
-      "image": "https://autoplius-img.dgn.lt/ann_2_285699617/bmw-320-2-0-l-sedan-2020-dizel-0.jpg",
+      "image": "./image/bmw-320d2020.png",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -357,7 +357,7 @@
     },
     {
       "id": "audi-a32019",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/2017-audi-a3-quattro-mmp-1545076852.jpg?crop=1.00xw:0.822xh;0,0.118xh&resize=1200:*",
+      "image": "./image/audi-a32019.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -370,7 +370,7 @@
     },
     {
       "id": "mercedes-c2202018",
-      "image": "https://editorial.pxcrush.net/carsales/general/editorial/mercedes-benz_c_200_sedan_grey_025-6wnj.jpg?width=1024&height=683",
+      "image": "./image/mercedes-c2202018.jpg",
       "color": "gray",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -383,7 +383,7 @@
     },
     {
       "id": "renault-megane2019",
-      "image": "https://s.auto.drom.ru/i24251/r/photos/1420019/big_1535942.jpg",
+      "image": "./image/renault-megane2019.jpg",
       "color": "white",
       "gearbox": "auto",
       "fuel-type": "diesel",
@@ -396,7 +396,7 @@
     },
     {
       "id": "volvo-s602018",
-      "image": "https://two-auto.ru/wp-content/uploads/2018/06/31532.jpg",
+      "image": "./image/volvo-s602018.jpg",
       "color": "red",
       "gearbox": "auto",
       "fuel-type": "diesel",

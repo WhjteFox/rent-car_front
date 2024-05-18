@@ -145,3 +145,23 @@
     transform: scale(0.9);
     transition: all 0.2s;
 }
+
+.button-panel .button-disabled {
+    background-color: rgba(120, 120, 120, 0.1);
+    color:rgb(70, 70, 70);
+    font-weight: 700;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.button-panel .button-disabled:active {
+    transform: scale(1);
+}
+
+.button-panel .button-disabled .button-content {
+    transform: scale(1);
+}
+
+.button-panel .button-disabled:active .button-content {
+    transform: scale(1);
+}

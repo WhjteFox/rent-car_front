@@ -153,15 +153,27 @@ const Card = ({ car, user_id }) => {
                             <div className='button-label'>Інфо</div>
                         </div>
                     </button>
-                    <button className={`button-green ${isReserved ? 'disabled' : ''}`} onClick={handleBookingClick} disabled={isReserved}>
-                        <div className='button-content'>
-                            <div className='button-icon'>
-                                <img src={require('../image/icons/key_green.png')} alt='' />
-                                <img className='img-hover' src={require('../image/icons/key_black.png')} alt='' />
-                            </div>
-                            <div className='button-label'>Забронювати</div>
-                        </div>
-                    </button>
+                    {
+                        isReserved ? (
+                            <button className={`button-disabled ${isReserved ? 'disabled' : ''}`} onClick={handleBookingClick} disabled={isReserved}>
+                                <div className='button-content'>
+                                    <div className='button-icon'>
+                                        <img src={require('../image/icons/key_gray.png')} alt='' />
+                                    </div>
+                                    <div className='button-label'>Забронювати</div>
+                                </div>
+                            </button>
+                        ) : (
+                            <button className={`button-green ${isReserved ? 'disabled' : ''}`} onClick={handleBookingClick} disabled={isReserved}>
+                                <div className='button-content'>
+                                    <div className='button-icon'>
+                                        <img src={require('../image/icons/key_green.png')} alt='' />
+                                        <img className='img-hover' src={require('../image/icons/key_black.png')} alt='' />
+                                    </div>
+                                    <div className='button-label'>Забронювати</div>
+                                </div>
+                            </button>
+                        )}
                 </div>
             </div>
 

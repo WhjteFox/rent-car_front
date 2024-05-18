@@ -34,6 +34,17 @@
       "additionalComments": "",
       "pickUpDate": "2023-12-24T19:35:42.523Z",
       "returnDate": "2023-12-25T19:35:42.000Z"
+    },
+    {
+      "id": "usertoyota-corolla20191703455850362",
+      "car": "toyota-corolla2019",
+      "user": "user",
+      "totalPrice": 40,
+      "pickUpLocation": "Шандора Петефі площа",
+      "returnLocation": "",
+      "additionalComments": "",
+      "pickUpDate": "2023-12-25T21:59:50.000Z",
+      "returnDate": "2023-12-26T21:59:50.000Z"
     }
   ],
   "cars": [
@@ -69,7 +80,7 @@
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
       "gasoline": "6.7 л/100 км",
-      "available": true
+      "available": false
     },
     {
       "id": "ford-fusion2019",

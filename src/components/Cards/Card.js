@@ -16,7 +16,7 @@ const Card = ({ car, user_id }) => {
         fetch("http://localhost:8001/users/" + user_id)
             .then(res => res.json())
             .then(result => {
-                if(result.likes.includes(car.id)) {
+                if (result.likes.includes(car.id)) {
                     setLikeIcon('./image/icons/heart_red_filled.png');
                     setLikeHoverIcon('./image/icons/heart_black_filled.png')
                 }
@@ -47,6 +47,11 @@ const Card = ({ car, user_id }) => {
 
     const handleBooking = (bookingData) => {
         console.log('Бронювання авто:', bookingData);
+        fetch("http://localhost:8001/bookings/", {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(bookingData)
+        })
         setIsReserved(true);
         setShowBookingModal(false);
     };
@@ -131,8 +136,10 @@ const Card = ({ car, user_id }) => {
                 showModal={showBookingModal}
                 handleClose={handleCloseBookingModal}
                 handleBooking={handleBooking}
+                carId={car.id}
                 carImage={car.image}
                 carPrice={car.price}
+                userId={user_id}
             />
         </div>
     );

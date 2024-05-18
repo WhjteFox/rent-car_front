@@ -25,26 +25,15 @@
   ],
   "bookings": [
     {
-      "id": "userford-focus20131703442426190",
+      "id": "userford-focus20131703449134853",
       "car": "ford-focus2013",
       "user": "user",
-      "totalPrice": 60,
+      "totalPrice": 30,
       "pickUpLocation": "Шандора Петефі площа",
-      "returnLocation": "Минайська вулиця",
+      "returnLocation": "Петрова вулиця",
       "additionalComments": "",
-      "pickUpDate": "2023-12-24T17:12:08.312Z",
-      "returnDate": "2023-12-26T17:12:08.000Z"
-    },
-    {
-      "id": "usertoyota-corolla20191703442627078",
-      "car": "toyota-corolla2019",
-      "user": "user",
-      "totalPrice": 40,
-      "pickUpLocation": "Шандора Петефі площа",
-      "returnLocation": "Минайська вулиця",
-      "additionalComments": "",
-      "pickUpDate": "2023-12-24T18:29:26.367Z",
-      "returnDate": "2023-12-25T18:29:26.000Z"
+      "pickUpDate": "2023-12-24T19:35:42.523Z",
+      "returnDate": "2023-12-25T19:35:42.000Z"
     }
   ],
   "cars": [
@@ -63,13 +52,13 @@
       "wheeldrive": "Передній привід",
       "enginesize": "1.6",
       "gasoline": "7.8 л/100 км",
-      "available": true
+      "available": false
     },
     {
       "id": "toyota-corolla2019",
       "image": "./image/toyota-corolla2019.png",
       "color": "White",
-      "gearbox": "Полуавтоматчна",
+      "gearbox": "Напівавтоматична",
       "fuel_type": "Дизель",
       "brand": "Toyota",
       "model": "Corolla",

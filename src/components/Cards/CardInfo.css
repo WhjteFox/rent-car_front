@@ -15,10 +15,9 @@
     padding-bottom: 10px;
   }
 
-  .price {
+  .card-info h3 {
     color: rgb(255, 192, 91);
     font-weight: 500;
-    margin-left: 40px;
     font-size: 34px;
   }
   

@@ -1,7 +1,7 @@
 import React from 'react';
 import './CardInfo.css';
 
-const CardInfo = ({ color, brand, model, price, year}) => {
+const CardInfo = ({ color, brand, model, year}) => {
     return( 
         <div className='card-info'>
             <h5>Колір: {color}</h5>

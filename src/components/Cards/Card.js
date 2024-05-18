@@ -3,6 +3,7 @@ import CardInfo from './CardInfo.js';
 import InfoModal from './InfoModal.js';
 import BookingModal from './BookingModal.js';
 import './Card.css';
+import './CardPrice.css';
 import './CardButtonPanel.css';
 
 const Card = ({ car, user_id }) => {
@@ -26,6 +27,20 @@ const Card = ({ car, user_id }) => {
                 }
             });
     }, [user_id, car.id]);
+
+    useEffect(() => {
+        fetch("http://localhost:8001/cars/" + car.id)
+            .then(res => res.json())
+            .then(cardata => {
+                if (cardata.available) {
+                    setIsReserved(false);
+                }
+                else {
+                    setIsReserved(true);
+                    setShowBookingModal(false);
+                }
+            });
+    });
 
     const handleInfoClick = () => {
         setShowModal(true);
@@ -51,7 +66,18 @@ const Card = ({ car, user_id }) => {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(bookingData)
-        })
+        });
+        fetch("http://localhost:8001/cars/" + car.id)
+            .then((res) => res.json())
+            .then(cardata => {
+                console.log(cardata);
+                cardata.available = false;
+                fetch("http://localhost:8001/cars/" + car.id, {
+                    method: "PUT",
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify(cardata)
+                });
+            });
         setIsReserved(true);
         setShowBookingModal(false);
     };
@@ -93,14 +119,22 @@ const Card = ({ car, user_id }) => {
             <div className='card-content'>
                 <img src={car.image} alt={car.model} />
                 <div className='empty'></div>
-                <CardInfo color={car.color} brand={car.brand} model={car.model} price={car.price} year={car.year} fuel_type={car.fuel_type} gearbox={car.gearbox} wheeldrive={car.wheeldrive} enginesize={car.enginesize} gasoline={car.gasoline} />
+                <CardInfo color={car.color} brand={car.brand} model={car.model} year={car.year} fuel_type={car.fuel_type} gearbox={car.gearbox} wheeldrive={car.wheeldrive} enginesize={car.enginesize} gasoline={car.gasoline} />
             </div>
             <div className='card-bottom'>
-                {isReserved ? (
-                    <span className='status'>Заброньовано</span>
-                ) : (
-                    <span className='price'>Від {car.price}$/день</span>
-                )}
+                <div className='card-price'>
+                    {isReserved ? (
+                        <div>
+                            <h6 className='status-red'>Немає в наявності</h6>
+                            <h4 className='price-disabled'>${car.price}/день</h4>
+                        </div>
+                    ) : (
+                        <div>
+                            <h6 className='status-green'>У наявності</h6>
+                            <h4 className='price'>${car.price}/день</h4>
+                        </div>
+                    )}
+                </div>
                 <div className='button-panel'>
                     <button className='button-red' onClick={handleLikeClick}>
                         <div className='button-content'>

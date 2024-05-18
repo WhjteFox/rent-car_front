@@ -17,7 +17,7 @@
 .side-navbar a {
     text-decoration: none;
     font-size: 24px;
-    color: rgb(225, 225, 225);
+    color: rgb(220, 220, 220);
     transition: all 0.2s;
 }
 
@@ -29,4 +29,10 @@
 .side-navbar div:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.2s;
+}
+
+.side-navbar img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
 }

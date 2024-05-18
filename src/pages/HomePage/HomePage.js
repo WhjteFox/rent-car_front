@@ -71,7 +71,7 @@ export const HomePage = () => {
                 <h2>Головна</h2>
                 <div className="row g-3">
                     <div className="col-md-4">
-                        <input type="text" className="form-control" placeholder="Пошук" onChange={handleSearch} />
+                        <input type="text" className="form-control rounded-pill" placeholder="Пошук" onChange={handleSearch} />
                     </div>
                     <div className="col-md-4">
                         <select className="form-select" onChange={(e) => setSelectedCategory(e.target.value)}>

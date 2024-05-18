@@ -7,8 +7,9 @@ import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App"> 
-        <Header></Header>
+    <div className="App">
+        <Header/>
+        <img className='backdrop' src={require(".//components/image/background.png")} alt='background'></img>
         <Routes>
           <Route path='/' element = {<HomePage/>}></Route>
           <Route path='/login' element = {<LoginPage/>}></Route>

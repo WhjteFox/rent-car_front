@@ -28,7 +28,7 @@ export const LoginPage = () => {
                if (response.password === password) {
                   console.log("Login success. Welcome, " + username);
                   sessionStorage.setItem("username", username);
-                  
+
                   navigate("/");
                }
                else {
@@ -61,22 +61,20 @@ export const LoginPage = () => {
          </head>
          <body className='container'>
             <div className='container'>
-               <div className='page'>
-                  <form onSubmit={LoginProceed}>
-                     <div className='card' data-bs-theme='dark'>
-                        <div className='card-header'>
-                           <h2>Увійти</h2>
-                        </div>
-                        <div className='card-body'>
-                           <input required className='form-control' value={username} onChange={e => update_username(e.target.value)} placeholder='Логін'></input>
-                           <input required className='form-control mt-3' type='password' value={password} onChange={e => update_password(e.target.value)} placeholder='Пароль'></input>
-                        </div>
-                        <div className='card-footer'>
-                           <button className='btn btn-primary btn-lg' type='submit'>Вхід</button>
-                        </div>
+               <form onSubmit={LoginProceed}>
+                  <div className='card' data-bs-theme='dark'>
+                     <div className='card-header'>
+                        <h2>Увійти</h2>
                      </div>
-                  </form>
-               </div>
+                     <div className='card-body'>
+                        <input required className='form-control' value={username} onChange={e => update_username(e.target.value)} placeholder='Логін'></input>
+                        <input required className='form-control mt-3' type='password' value={password} onChange={e => update_password(e.target.value)} placeholder='Пароль'></input>
+                     </div>
+                     <div className='card-footer'>
+                        <button className='btn btn-primary btn-lg' type='submit'>Вхід</button>
+                     </div>
+                  </div>
+               </form>
             </div>
          </body>
       </html>

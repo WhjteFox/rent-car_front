@@ -1,15 +1,15 @@
 .booking-modal {
     .modal-content {
-      background-color: #fff; /* Колір фону вспливашки */
+      background-color: #fff;
     }
   
     .modal-header {
-      background-color: #007bff; /* Колір заголовку вспливашки */
-      color: #fff; /* Колір тексту заголовку */
+      background-color: #007bff;
+      color: #fff;
     }
   
     .modal-footer {
-      background-color: #f8f9fa; /* Колір нижнього блоку вспливашки */
+      background-color: #f8f9fa;
     }
   }
   

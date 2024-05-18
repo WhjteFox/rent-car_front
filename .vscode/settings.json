@@ -1,3 +1,10 @@
 {
-   "editor.detectIndentation": true
+   "editor.detectIndentation": false,
+   "editor.tabSize": 3,
+   "[dockercompose]": {
+      "editor.tabSize": 3
+   },
+   "[yaml]": {
+      "editor.tabSize": 3
+   }
 }

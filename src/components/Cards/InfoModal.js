@@ -1,9 +1,8 @@
-// InfoModal.js
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import './InfoModal.css';
 
-const InfoModal = ({ car, showModal, handleClose }) => {
+const InfoModal = ({ car, showModal, handleClose}) => {
   return (
     <div className='info-modal'>
       <Modal className='info-modal' show={showModal} onHide={handleClose}>

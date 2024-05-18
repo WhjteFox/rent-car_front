@@ -31,7 +31,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "1.6",
-      "gasoline": "7.8 л/100 км"
+      "gasoline": "7.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "toyota-corolla2019",
@@ -47,7 +48,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
-      "gasoline": "6.7 л/100 км"
+      "gasoline": "6.7 л/100 км",
+      "status": "Available"
     },
     {
       "id": "ford-fusion2019",
@@ -63,7 +65,8 @@
       "category": "category1",
       "wheeldrive": "Повний привід",
       "enginesize": "2.5",
-      "gasoline": "8.5 л/100 км"
+      "gasoline": "8.5 л/100 км",
+      "status": "Available"
     },
     {
       "id": "chevrolet-impala2020",
@@ -79,7 +82,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "3.6",
-      "gasoline": "9.8 л/100 км"
+      "gasoline": "9.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "honda-accord2015",
@@ -95,7 +99,8 @@
       "category": "category1",
       "wheeldrive": "Повний привід",
       "enginesize": "2.4",
-      "gasoline": " 7.6 л/100 км"
+      "gasoline": " 7.6 л/100 км",
+      "status": "Available"
     },
     {
       "id": "toyota-corolla2014",
@@ -111,7 +116,8 @@
       "category": "category2",
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
-      "gasoline": "6.5 л/100 км"
+      "gasoline": "6.5 л/100 км",
+      "status": "Available"
     },
     {
       "id": "nissan-sentra2017",
@@ -127,7 +133,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
-      "gasoline": "7.2 л/100 км"
+      "gasoline": "7.2 л/100 км",
+      "status": "Available"
     },
     {
       "id": "hyundai-sonata2016",
@@ -143,7 +150,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "2.4",
-      "gasoline": "8.1 л/100 км"
+      "gasoline": "8.1 л/100 км",
+      "status": "Available"
     },
     {
       "id": "kia-soul2018",
@@ -159,7 +167,8 @@
       "category": "category3",
       "wheeldrive": "Повний привід",
       "enginesize": "2.0",
-      "gasoline": "7.8 л/100 км"
+      "gasoline": "7.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "ford-escape2019",
@@ -175,7 +184,8 @@
       "category": "category4",
       "wheeldrive": "Повний привід",
       "enginesize": "1.5",
-      "gasoline": "8.0 л/100 км"
+      "gasoline": "8.0 л/100 км",
+      "status": "Available"
     },
     {
       "id": "chevrolet-equinox2020",
@@ -191,7 +201,8 @@
       "category": "category4",
       "wheeldrive": "Повний привід",
       "enginesize": "1.5",
-      "gasoline": "8.3 л/100 км"
+      "gasoline": "8.3 л/100 км",
+      "status": "Available"
     },
     {
       "id": "honda-cr-v2016",
@@ -207,7 +218,8 @@
       "category": "category4",
       "wheeldrive": "Повний привід",
       "enginesize": "2.4",
-      "gasoline": "7.8 л/100 км"
+      "gasoline": "7.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "toyota-rav42017",
@@ -223,7 +235,8 @@
       "category": "category2",
       "wheeldrive": "Повний привід",
       "enginesize": "2.5",
-      "gasoline": "8.0 л/100 км"
+      "gasoline": "8.0 л/100 км",
+      "status": "Available"
     },
     {
       "id": "nissan-rogue2018",
@@ -239,7 +252,8 @@
       "category": "category2",
       "wheeldrive": "Передній привід",
       "enginesize": "2.5",
-      "gasoline": "7.6   л/100 км"
+      "gasoline": "7.6   л/100 км",
+      "status": "Available"
     },
     {
       "id": "hyundai-tucson2019",
@@ -255,7 +269,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "2.0",
-      "gasoline": "8.4 л/100 км"
+      "gasoline": "8.4 л/100 км",
+      "status": "Available"
     },
     {
       "id": "kia-sportage2020",
@@ -271,7 +286,8 @@
       "category": "category4",
       "wheeldrive": "Повний привід",
       "enginesize": "2.4",
-      "gasoline": "8.1 л/100 км"
+      "gasoline": "8.1 л/100 км",
+      "status": "Available"
     },
     {
       "id": "ford-edge2017",
@@ -287,7 +303,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "2.0",
-      "gasoline": "9.8 л/100 км"
+      "gasoline": "9.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "chevrolet-traverse2018",
@@ -303,7 +320,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "3.6",
-      "gasoline": "10.8 л/100 км"
+      "gasoline": "10.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "toyota-camry2015",
@@ -319,7 +337,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "2.5",
-      "gasoline": "8.2 л/100 км"
+      "gasoline": "8.2 л/100 км",
+      "status": "Available"
     },
     {
       "id": "honda-civic2014",
@@ -335,7 +354,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
-      "gasoline": "6.8 л/100 км"
+      "gasoline": "6.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "chevrolet-malibu2016",
@@ -351,7 +371,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "2.5",
-      "gasoline": "8.4 л/100 км"
+      "gasoline": "8.4 л/100 км",
+      "status": "Available"
     },
     {
       "id": "nissan-altima2017",
@@ -367,7 +388,8 @@
       "category": "category3",
       "wheeldrive": "Повний привід",
       "enginesize": "2.5",
-      "gasoline": "7.5 л/100 км"
+      "gasoline": "7.5 л/100 км",
+      "status": "Available"
     },
     {
       "id": "hyundai-elantra2015",
@@ -383,7 +405,8 @@
       "category": "category3",
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
-      "gasoline": "7.1 л/100 км"
+      "gasoline": "7.1 л/100 км",
+      "status": "Available"
     },
     {
       "id": "kia-optima2018",
@@ -399,7 +422,8 @@
       "category": "category1",
       "wheeldrive": "Повний привід",
       "enginesize": "2.4",
-      "gasoline": "8.1 л/100 км"
+      "gasoline": "8.1 л/100 км",
+      "status": "Available"
     },
     {
       "id": "volkswagen-jetta2019",
@@ -415,7 +439,8 @@
       "category": "category1",
       "wheeldrive": "Передній привід",
       "enginesize": "1.4",
-      "gasoline": "6.8 л/100 км"
+      "gasoline": "6.8 л/100 км",
+      "status": "Available"
     },
     {
       "id": "bmw-320d2020",
@@ -431,7 +456,8 @@
       "category": "category5",
       "wheeldrive": "Повний привід",
       "enginesize": "2.0",
-      "gasoline": "4.3 л/100 км"
+      "gasoline": "4.3 л/100 км",
+      "status": "Available"
     },
     {
       "id": "audi-a32019",
@@ -447,7 +473,8 @@
       "category": "category5",
       "wheeldrive": "Повний привід",
       "enginesize": "2.0",
-      "gasoline": "6.2 л/100 км"
+      "gasoline": "6.2 л/100 км",
+      "status": "Available"
     },
     {
       "id": "mercedes-c2202018",
@@ -463,7 +490,8 @@
       "category": "category5",
       "wheeldrive": "Повний привід",
       "enginesize": "2.1",
-      "gasoline": "5.1 л/100 км"
+      "gasoline": "5.1 л/100 км",
+      "status": "Available"
     },
     {
       "id": "renault-megane2019",
@@ -479,7 +507,8 @@
       "category": "category5",
       "wheeldrive": "Повний привід",
       "enginesize": "1.3",
-      "gasoline": "6.2 л/100 км"
+      "gasoline": "6.2 л/100 км",
+      "status": "Available"
     },
     {
       "id": "volvo-s602018",
@@ -495,7 +524,8 @@
       "category": "category5",
       "wheeldrive": "Повний привід",
       "enginesize": "2.0",
-      "gasoline": "7.0 л/100 км"
+      "gasoline": "7.0 л/100 км",
+      "status": "Available"
     }
   ],
   "access_rights": [
@@ -547,5 +577,289 @@
       "can_add": true,
       "can_delete": false
     }
+  ],
+  "streets": [
+       {"location": "8 Березня вулиця"},
+       {"location": "Августина Волошина вулиця"},
+       {"location": "Адмірала Нахімова вулиця"},
+       {"location": "Адольфа Добрянського вулиця"},
+       {"location": "Айвазовського вулиця"},
+       {"location": "Академіка Корольова вулиця"},
+       {"location": "Алішера Навої провулок"},
+       {"location": "Андрія Бачинського вулиця"},
+       {"location": "Андрія Новака вулиця"},
+       {"location": "Андрія Палая вулиця"},
+       {"location": "Анкудінова вулиця"},
+       {"location": "Антоніна Дворжака вулиця"},
+       {"location": "Антонія Годинки вулиця"},
+       {"location": "Бабяка вулиця"},
+       {"location": "Бачінського вулиця"},
+       {"location": "Берчени вулиця"},
+       {"location": "Бестужева вулиця"},
+       {"location": "Богдана Хмельницького площа"},
+       {"location": "Богомольця вулиця"},
+       {"location": "Болгарська вулиця"},
+       {"location": "Бориса Тлехаса вулиця"},
+       {"location": "Бородіна вулиця"},
+       {"location": "Бращайков вулиця"},
+       {"location": "Брестська вулиця"},
+       {"location": "Бродлаковича вулиця"},
+       {"location": "Бічна вулиця"},
+       {"location": "Бічна вулиця"},
+       {"location": "Вайды вулиця"},
+       {"location": "Вакарова вулиця"},
+       {"location": "Василия Комендаря вулиця"},
+       {"location": "Василя Балога вулиця"},
+       {"location": "Василя Балога вулиця"},
+       {"location": "Василя Верещагіна вулиця"},
+       {"location": "Василя Докучаєва вулиця"},
+       {"location": "Василя Комендаря вулиця"},
+       {"location": "Василя Стефаника вулиця"},
+       {"location": "Василя Ґренджі-Донського площа"},
+       {"location": "Верещагіна вулиця"},
+       {"location": "Верховинська вулиця"},
+       {"location": "Виничная вулиця"},
+       {"location": "Висока вулиця"},
+       {"location": "Високовольтна вулиця"},
+       {"location": "Владимира Гошовского вулиця"},
+       {"location": "Воз’єднання"},
+       {"location": "Воловецька вулиця"},
+       {"location": "Володимира Гошовського вулиця"},
+       {"location": "Володимира Сливки вулиця"},
+       {"location": "Володимирівська вулиця"},
+       {"location": "Волошина вулиця"},
+       {"location": "Вузька вулиця"},
+       {"location": "Вілмоша Ковача вулиця"},
+       {"location": "Гагаріна вулиця"},
+       {"location": "Гвардійська вулиця"},
+       {"location": "Генерала Свободи вулиця"},
+       {"location": "Героїв Крут вулиця"},
+       {"location": "Героїв Небесної Сотні вулиця"},
+       {"location": "Гленца вулиця"},
+       {"location": "Гойды вулиця"},
+       {"location": "Горянська вулиця"},
+       {"location": "Гранитная вулиця"},
+       {"location": "Гренджи-Донского площа"},
+       {"location": "Грибоєдова вулиця"},
+       {"location": "Грушевського вулиця"},
+       {"location": "Гірчичне Зерно провулок"},
+       {"location": "Дайбожская вулиця"},
+       {"location": "Дайбозька вулиця"},
+       {"location": "Дайки вулиця"},
+       {"location": "Дворжака вулиця"},
+       {"location": "Дендеши вулиця"},
+       {"location": "Детская вулиця"},
+       {"location": "Дитяча вулиця"},
+       {"location": "Дмитра Вакарова вулиця"},
+       {"location": "Дмитра Добролюбова вулиця"},
+       {"location": "Дмитра Снігурського вулиця"},
+       {"location": "Добролюбова вулиця"},
+       {"location": "Добрянського вулиця"},
+       {"location": "Довженка вулиця"},
+       {"location": "Докучаєва вулиця"},
+       {"location": "Доманинська вулиця"},
+       {"location": "Достоєвського вулиця"},
+       {"location": "Дравецкая вулиця"},
+       {"location": "Другетів вулиця"},
+       {"location": "Дружби Народів площа"},
+       {"location": "Духновича вулиця"},
+       {"location": "Електрозаводська вулиця"},
+       {"location": "Жатковича вулиця"},
+       {"location": "Жупанатська площа"},
+       {"location": "Заводська вулиця"},
+       {"location": "Загорська вулиця"},
+       {"location": "Закарпатська вулиця"},
+       {"location": "Залізнична вулиця"},
+       {"location": "Замкова вулиця"},
+       {"location": "Запорізька вулиця"},
+       {"location": "Золота вулиця"},
+       {"location": "Золотиста вулиця"},
+       {"location": "Зореслава вулиця"},
+       {"location": "Ивана Чурговича вулиця"},
+       {"location": "Игоря Розлуцкого вулиця"},
+       {"location": "Йокаи вулиця"},
+       {"location": "Кальмана Миксата вулиця"},
+       {"location": "Канально-насыпная вулиця"},
+       {"location": "Капушанська вулиця"},
+       {"location": "Капітульна вулиця"},
+       {"location": "Керченська вулиця"},
+       {"location": "Кирила та Мефодія площа"},
+       {"location": "Київська набережна"},
+       {"location": "Климента Тімірязєва вулиця"},
+       {"location": "Климпуша вулиця"},
+       {"location": "Князя Лаборця площа"},
+       {"location": "Ковача Вилмоша вулиця"},
+       {"location": "Корзо вулиця"},
+       {"location": "Коритнянська вулиця"},
+       {"location": "Коротка вулиця"},
+       {"location": "Корятовича вулиця"},
+       {"location": "Котляревського вулиця"},
+       {"location": "Коцюбинського вулиця"},
+       {"location": "Кошицька вулиця"},
+       {"location": "Крилова вулиця"},
+       {"location": "Кримська вулиця"},
+       {"location": "Кіндрата Рилєєва вулиця"},
+       {"location": "Лайоша Кошута вулиця"},
+       {"location": "Легоцкого вулиця"},
+       {"location": "Лесі Українки вулиця"},
+       {"location": "Лисенка вулиця"},
+       {"location": "Лобачевського вулиця"},
+       {"location": "Лозова вулиця"},
+       {"location": "Лучкая вулиця"},
+       {"location": "Льва Толстого вулиця"},
+       {"location": "Макаренко вулиця"},
+       {"location": "Мала вулиця"},
+       {"location": "Малокаменная вулиця"},
+       {"location": "Малоужанская вулиця"},
+       {"location": "Марії Заньковецької вулиця"},
+       {"location": "Миколи Бобяка вулиця"},
+       {"location": "Миколи Гоголя вулиця"},
+       {"location": "Минайська вулиця"},
+       {"location": "Мисливський провулок"},
+       {"location": "Мисливський провулок"},
+       {"location": "Митна вулиця"},
+       {"location": "Митна вулиця"},
+       {"location": "Митна вулиця"},
+       {"location": "Митрака вулиця"},
+       {"location": "Михайла Грушевського вулиця"},
+       {"location": "Михайла Лермонтова вулиця"},
+       {"location": "Михайла Лучкая вулиця"},
+       {"location": "Михайла Салтикова-Щедріна вулиця"},
+       {"location": "Михайла Томчанія вулиця"},
+       {"location": "Можайського вулиця"},
+       {"location": "Молодіжна вулиця"},
+       {"location": "Музейний провулок"},
+       {"location": "Мукачівська вулиця"},
+       {"location": "Міклоша Берчені вулиця"},
+       {"location": "набережна вулиця"},
+       {"location": "Народна площа"},
+       {"location": "Нахімова вулиця"},
+       {"location": "Небесної Сотні вулиця"},
+       {"location": "Незалежності набережна"},
+       {"location": "Нижнее Солотвино"},
+       {"location": "Новака вулиця"},
+       {"location": "Нововолодимирська вулиця"},
+       {"location": "Нікітіна вулиця"},
+       {"location": "Огарьова вулиця"},
+       {"location": "Одеська вулиця"},
+       {"location": "Олега Кошового вулиця"},
+       {"location": "Олександра Блистіва вулиця"},
+       {"location": "Олександра Блістіва вулиця"},
+       {"location": "Олександра Бородіна вулиця"},
+       {"location": "Олександра Довженка вулиця"},
+       {"location": "Олександра Духновича вулиця"},
+       {"location": "Олександра Митрака вулиця"},
+       {"location": "Олександра Можайського вулиця"},
+       {"location": "Олександра Пушкіна площа"},
+       {"location": "Олександра Радищева вулиця"},
+       {"location": "Олександра Фединця вулиця"},
+       {"location": "Олекси Борканюка вулиця"},
+       {"location": "Олексія Бестужева-Рюміна вулиця"},
+       {"location": "Ольбрахта вулиця"},
+       {"location": "Оноківська вулиця"},
+       {"location": "Орлиная вулиця"},
+       {"location": "Острівна вулиця"},
+       {"location": "Павлова вулиця"},
+       {"location": "Павловича вулиця"},
+       {"location": "Панаса Мирного вулиця"},
+       {"location": "Панькевича вулиця"},
+       {"location": "Паркова набережна"},
+       {"location": "Перемоги вулиця"},
+       {"location": "Пестеля вулиця"},
+       {"location": "Петра Лінтура вулиця"},
+       {"location": "Петрова вулиця"},
+       {"location": "Плотени вулиця"},
+       {"location": "Погорелова вулиця"},
+       {"location": "Подгорный провулок"},
+       {"location": "Подградская вулиця"},
+       {"location": "Полонинська вулиця"},
+       {"location": "Польова вулиця"},
+       {"location": "Поліни Осипенко вулиця"},
+       {"location": "Поштова площа"},
+       {"location": "Православна набережна"},
+       {"location": "Приютський провулок"},
+       {"location": "Проектна вулиця"},
+       {"location": "Пушкіна площа"},
+       {"location": "Підградська вулиця"},
+       {"location": "Підгірна вулиця"},
+       {"location": "Підгірний провулок"},
+       {"location": "Радищева вулиця"},
+       {"location": "Райдужна вулиця"},
+       {"location": "Рилєєва вулиця"},
+       {"location": "Робоча вулиця"},
+       {"location": "Романа Шухевича вулиця"},
+       {"location": "Руська вулиця"},
+       {"location": "Садова вулиця"},
+       {"location": "Свободи проспект"},
+       {"location": "Сергея Мартина вулиця"},
+       {"location": "Сечені вулиця"},
+       {"location": "Сильвая вулиця"},
+       {"location": "Сковороди вулиця"},
+       {"location": "Слов’янська набережна"},
+       {"location": "Собранецкая вулиця"},
+       {"location": "Солов'їна вулиця"},
+       {"location": "Солов’їна вулиця"},
+       {"location": "Сонячна вулиця"},
+       {"location": "Соснова вулиця"},
+       {"location": "Спортивна вулиця"},
+       {"location": "Срібляста вулиця"},
+       {"location": "Станційна вулиця"},
+       {"location": "Степана Добоша вулиця"},
+       {"location": "Стефаника вулиця"},
+       {"location": "Стрільнична вулиця"},
+       {"location": "Студентська набережна"},
+       {"location": "Східна вулиця"},
+       {"location": "Театральна площа"},
+       {"location": "Театральний провулок"},
+       {"location": "Тельмана вулиця"},
+       {"location": "Теодора Ромжі вулиця"},
+       {"location": "Техническая вулиця"},
+       {"location": "Тиводара Легоцького вулиця"},
+       {"location": "Тиха вулиця"},
+       {"location": "Томчания вулиця"},
+       {"location": "Тургенєва вулиця"},
+       {"location": "Тімірязєва вулиця"},
+       {"location": "Ужанская вулиця"},
+       {"location": "Українська вулиця"},
+       {"location": "Укропний провулок"},
+       {"location": "Університетська вулиця"},
+       {"location": "Урожайна вулиця"},
+       {"location": "Успенського вулиця"},
+       {"location": "Устима Кармелюка вулиця"},
+       {"location": "Фединца вулиця"},
+       {"location": "Федора Манайла вулиця"},
+       {"location": "Федора Потушняка вулиця"},
+       {"location": "Ференца Ракоці II вулиця"},
+       {"location": "Франтішека Тіхого вулиця"},
+       {"location": "Фріца Гленца вулиця"},
+       {"location": "Цегольнянская вулиця"},
+       {"location": "Центральний провулок"},
+       {"location": "Челюскінців вулиця"},
+       {"location": "Черешнева вулиця"},
+       {"location": "Черноморский провулок"},
+       {"location": "Шандора Петефі площа"},
+       {"location": "Швабська вулиця"},
+       {"location": "Шевченка вулиця"},
+       {"location": "Шевченка провулок"},
+       {"location": "Шишкіна вулиця"},
+       {"location": "Шумна вулиця"},
+       {"location": "Щедрина вулиця"},
+       {"location": "Эгана площа"},
+       {"location": "Юлії Жемайте вулиця"},
+       {"location": "Юрія Гагаріна вулиця"},
+       {"location": "Юрія Гойди вулиця"},
+       {"location": "Юрія Жатковича вулиця"},
+       {"location": "Яроцька вулиця"},
+       {"location": "Євгена Фенцика площа"},
+       {"location": "Єньківська вулиця"},
+       {"location": "Івана Анкудінова вулиця"},
+       {"location": "Івана Запісочного вулиця"},
+       {"location": "Івана Котляревського вулиця"},
+       {"location": "Івана Панькевича вулиця"},
+       {"location": "Івана Франко вулиця"},
+       {"location": "Івана Шишкіна вулиця"},
+       {"location": "Іллі Бродлаковича вулиця"},
+       {"location": "Ісака Дунаєвського вулиця"},
+       {"location": "Іштвана Сечені вулиця"} 
   ]
 }

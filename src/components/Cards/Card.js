@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CardInfo from './CardInfo.js';
 import InfoModal from './InfoModal.js';
 import BookingModal from './BookingModal.js';
@@ -9,6 +9,23 @@ const Card = ({ car, user_id }) => {
     const [showModal, setShowModal] = useState(false);
     const [showBookingModal, setShowBookingModal] = useState(false);
     const [isReserved, setIsReserved] = useState(car.status === 'Reserved');
+    const [like_icon, setLikeIcon] = useState('./image/icons/heart_red_outline.png');
+    const [like_hover_icon, setLikeHoverIcon] = useState('./image/icons/heart_black_outline.png');
+
+    useEffect(() => {
+        fetch("http://localhost:8001/users/" + user_id)
+            .then(res => res.json())
+            .then(result => {
+                if(result.likes.includes(car.id)) {
+                    setLikeIcon('./image/icons/heart_red_filled.png');
+                    setLikeHoverIcon('./image/icons/heart_black_filled.png')
+                }
+                else {
+                    setLikeIcon('./image/icons/heart_red_outline.png');
+                    setLikeHoverIcon('./image/icons/heart_black_outline.png')
+                }
+            });
+    }, [user_id, car.id]);
 
     const handleInfoClick = () => {
         setShowModal(true);
@@ -50,6 +67,15 @@ const Card = ({ car, user_id }) => {
                     method: "PUT",
                     headers: { 'content-type': 'application/json' },
                     body: JSON.stringify(userdata)
+                }).then(() => {
+                    if (userdata.likes.includes(car.id)) {
+                        setLikeIcon('./image/icons/heart_red_filled.png');
+                        setLikeHoverIcon('./image/icons/heart_black_filled.png');
+                    }
+                    else {
+                        setLikeIcon('./image/icons/heart_red_outline.png');
+                        setLikeHoverIcon('./image/icons/heart_black_outline.png');
+                    }
                 });
             })
     }
@@ -74,8 +100,8 @@ const Card = ({ car, user_id }) => {
                     <button className='button-red' onClick={handleLikeClick}>
                         <div className='button-content'>
                             <div className='button-icon'>
-                                <img src={require('../image/icons/heart_red_outline.png')} alt='' />
-                                <img className='img-hover' src={require('../image/icons/heart_black_outline.png')} alt='' />
+                                <img src={like_icon} alt='' />
+                                <img className='img-hover' src={like_hover_icon} alt='' />
                             </div>
                         </div>
                     </button>

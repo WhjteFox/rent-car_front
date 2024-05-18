@@ -17,9 +17,9 @@
       "password": "1234",
       "access": "user",
       "likes": [
-        "ford-focus2013",
         "toyota-corolla2019",
-        "ford-fusion2019"
+        "ford-fusion2019",
+        "ford-focus2013"
       ]
     }
   ],

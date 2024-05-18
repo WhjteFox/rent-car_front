@@ -1,49 +1,51 @@
+// InfoModal.js
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './InfoModal.css';
 const InfoModal = ({ car, showModal, handleClose }) => {
   return (
-    <Modal show={showModal} onHide={handleClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>{car.brand} {car.model} {car.year}</Modal.Title>
+    <Modal show={showModal} onHide={handleClose} centered>
+      <Modal.Header closeButton className="brand-info">
+        <Modal.Title className="text-dark">{car.brand} {car.model} {car.year}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <img src={car.image} alt={car.model} className="img-fluid" />
-        <p>
+      <Modal.Body className="gray-lighter">
+        <img src={car.image} alt={car.model} className="img-fluid rounded" />
+        <p className="text-dark">
           <strong>Колір:</strong> {car.color}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Марка:</strong> {car.brand}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Модель:</strong> {car.model}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Рік випуску автомобілю:</strong> {car.year}
         </p>
-        <p>
-          <strong>Ціна за день:</strong> {car.price}$
+        <p className="text-dark">
+          <strong>Орієнтовна ціна за день:</strong> {car.price}$
         </p>
-        <p>
-          <strong>Середня ціна за місяць:</strong> {car.price*30}$
+        <p className="text-dark">
+          <strong>Середня ціна за місяць:</strong> {car.price * 30}$
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Тип пального:</strong> {car.fuel_type}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Коробка передач:</strong> {car.gearbox}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Тип приводу:</strong> {car.wheeldrive}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Об'єм двигуна:</strong> {car.enginesize}
         </p>
-        <p>
+        <p className="text-dark">
           <strong>Середній росхід топлива:</strong> {car.gasoline}
         </p>
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer className="brand-success">
         <Button variant="secondary" onClick={handleClose}>
           Закрити
         </Button>

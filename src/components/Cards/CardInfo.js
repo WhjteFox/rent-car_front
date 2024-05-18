@@ -8,7 +8,6 @@ const CardInfo = ({ color, brand, model, price, year}) => {
             <h5>Марка: {brand}</h5>
             <h2>Модель: {model}</h2>
             <h2>Рік випуску: {year}</h2>
-            <p>Ціна за день: {price}$</p> 
             
         </div>
     );

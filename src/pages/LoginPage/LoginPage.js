@@ -71,10 +71,18 @@ export const LoginPage = () => {
                         <input required className='form-control mt-3' type='password' value={password} onChange={e => update_password(e.target.value)} placeholder='Пароль'></input>
                      </div>
                      <div className='card-footer'>
-                        <button className='btn btn-primary btn-lg' type='submit'>Вхід</button>
+                        <button className='btn btn-primary btn-lg px-5' type='submit'>Вхід</button>
                      </div>
                   </div>
                </form>
+               <div className='mt-2'>
+                     <span className='me-2'>Не маєте акаунту? </span>
+                     <span>
+                        <a href='/signup'>
+                           <button className='btn btn-outline-primary mb-1 px-4 rounded-pill'>Зареєструватися</button>
+                        </a>
+                     </span>
+                  </div>
             </div>
          </body>
       </html>

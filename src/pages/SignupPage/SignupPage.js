@@ -7,14 +7,14 @@ export const SignupPage = () => {
    const [id, change_id] = useState("");
    const [password, change_password] = useState("");
    const access = "user";
-   
+
    const navigate = useNavigate();
-   
+
    const handle_submit = (e) => {
-      let signup_user = {id, password, access};
+      let signup_user = { id, password, access };
       fetch("http://localhost:8001/users", {
-         method:"POST",
-         headers:{'content-type':'application/json'},
+         method: "POST",
+         headers: { 'content-type': 'application/json' },
          body: JSON.stringify(signup_user)
       }).then((res) => {
          navigate('/login');
@@ -36,14 +36,22 @@ export const SignupPage = () => {
                            <h2>Створити обліковий запис</h2>
                         </div>
                         <div className='card-body'>
-                           <input required className='form-control' value={id} onChange={e=>change_id(e.target.value)} placeholder='Логін'></input>
-                           <input required className='form-control mt-3' value={password} onChange={e=>change_password(e.target.value)} type='password' placeholder='Пароль'></input>
+                           <input required className='form-control' value={id} onChange={e => change_id(e.target.value)} placeholder='Логін'></input>
+                           <input required className='form-control mt-3' value={password} onChange={e => change_password(e.target.value)} type='password' placeholder='Пароль'></input>
                         </div>
                         <div className='card-footer'>
-                           <button className='btn btn-primary btn-lg' type='submit'>Зареєструватися</button>
+                           <button className='btn btn-primary btn-lg px-5' type='submit'>Зареєструватися</button>
                         </div>
                      </div>
                   </form>
+                  <div className='mt-2'>
+                     <span className='me-2'>Вже маєте акаунт? </span>
+                     <span>
+                        <a href='/login'>
+                           <button className='btn btn-outline-primary mb-1 px-4 rounded-pill'>Увійти</button>
+                        </a>
+                     </span>
+                  </div>
                </div>
             </div>
          </body>

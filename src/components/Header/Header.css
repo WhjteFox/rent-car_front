@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: calc(100vw - 300px);
+    background-color: rgba(171, 200, 227, 0.3);
+    backdrop-filter: blur(16px);
+    border-bottom: 3px solid rgba(201, 229, 255, 0.2);
+    justify-content: space-between;
+    padding: 13px 25px 0px 25px;
+    height: 70px;
+    z-index: 9999;
+  }
+  
+  .header a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(225, 225, 225);
+    transition: all 0.2s;
+  }
+  
+  .header a:hover {
+    color: rgb(160, 160, 160);
+    transition: all 0.2s;
+  }

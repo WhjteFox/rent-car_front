@@ -1,60 +1,36 @@
-/* body {
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 50%, rgba(255,255,255,1) 50%);
-    font-family: 'Roboto', sans-serif;
-}
-
-.page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+    background-color: transparent;
 }
 
 .card {
-    width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    background: white;
+    background-color: rgba(50, 51, 55, 0.2);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(150, 150, 150, 0.3);
+    border-radius: 16px;
 }
 
-.card-header {
-    background-color: #007bff;
-    color: white;
-    border-radius: 15px 15px 0 0;
-    padding: 19px;
+.card .card-header {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
-.card-header h2 {
-    margin: 0;
-}
-
-.card-body {
-    padding: 20px;
-}
-
-.form-control {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.form-control::placeholder {
-    color: #aaa;
-}
-
-.card-footer {
-    background-color: #007bff;
-    color: white;
-    border-radius: 0 0 15px 15px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-primary {
-    background-color: #ffc107;
-    border-color: #ffc107;
-    padding: 10px 20px;
+span {
+    color: rgb(200, 200, 200);
     font-size: 18px;
-    font-weight: bold;
-}  */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    transform: scale(1);
+    border-radius: 10px;
+    transition: all 0.15s;
+}
+
+.btn:active {
+    transform: scale(0.82);
+    transition: all 0.15s;
+}

@@ -1,0 +1,32 @@
+.side-bar {
+    padding-top: 150px;
+    position: fixed;
+    width: 300px;
+    padding-left: 20px;
+    min-height: 100%;
+    background-color: rgba(94, 109, 123, 0.2);
+    backdrop-filter: blur(10px);
+    border-right: 3px solid rgba(194, 226, 255, 0.35);
+    z-index: 9999;
+}
+
+.side-navbar {
+    position: fixed;
+}
+
+.side-navbar a {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(225, 225, 225);
+    transition: all 0.2s;
+}
+
+.side-navbar div {
+    background-color: rgba(255, 255, 255, 0.0);
+    transition: all 0.2s;
+}
+
+.side-navbar div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+}

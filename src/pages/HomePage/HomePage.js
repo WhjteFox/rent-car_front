@@ -13,6 +13,9 @@ export const HomePage = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
     const [selectedPriceRange, setSelectedPriceRange] = useState("");
+    const [selectedFuelType, setSelectedFuelType] = useState("");
+    const [selectedGearbox, setSelectedGearbox] = useState("");
+    const [selectedBrand, setSelectedBrand] = useState(""); 
 
     const navigate = useNavigate();
 
@@ -36,14 +39,12 @@ export const HomePage = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         setSearchTerm(e.target.value.toLowerCase());
-
     };
 
     useEffect(() => {
         if (searchTerm === null || searchTerm.length === 0) {
             setFilteredData(data);
-        }
-        else if (searchTerm.length >= 1) {
+        } else if (searchTerm.length >= 1) {
             const filtered = data.filter((car) =>
                 car.brand.toLowerCase().includes(searchTerm) ||
                 car.model.toLowerCase().includes(searchTerm)
@@ -51,6 +52,18 @@ export const HomePage = () => {
             setFilteredData(filtered);
         }
     }, [searchTerm, data]);
+
+    const handleFuelTypeChange = (e) => {
+        setSelectedFuelType(e.target.value);
+    };
+
+    const handleGearboxChange = (e) => {
+        setSelectedGearbox(e.target.value);
+    };
+
+    const handleBrandChange = (e) => { 
+        setSelectedBrand(e.target.value);
+    };
 
     const handleFilter = () => {
         let filtered = data;
@@ -64,6 +77,19 @@ export const HomePage = () => {
                 (car) => car["class price"] === selectedPriceRange
             );
         }
+
+        if (selectedFuelType !== "") {
+            filtered = filtered.filter((car) => car.fuel_type === selectedFuelType);
+        }
+
+        if (selectedGearbox !== "") {
+            filtered = filtered.filter((car) => car.gearbox === selectedGearbox);
+        }
+
+        if (selectedBrand !== "") { 
+            filtered = filtered.filter((car) => car.brand === selectedBrand);
+        }
+
         setFilteredData(filtered);
     };
 
@@ -76,7 +102,6 @@ export const HomePage = () => {
                 <Header />
                 <div className="container">
                     <div className="page">
-                        <h3>{sessionStorage.getItem("username")}</h3>
                         <h2>Головна</h2>
                         <div className="row g-3">
                             <div className="col-md-4">
@@ -95,11 +120,42 @@ export const HomePage = () => {
                             <div className="col-md-4">
                                 <select className="form-select" onChange={(e) => setSelectedPriceRange(e.target.value)}>
                                     <option value="">Цінові категорії</option>
-                                    <option value="econom">економ</option>
-                                    <option value="medium">середній</option>
-                                    <option value="business">бізнес</option>
-                                    <option value="premium">преміум</option>
-                                    <option value="luxury">люкс</option>
+                                    <option value="econom">економ до 30$</option>
+                                    <option value="medium">середній до 40$</option>
+                                    <option value="business">бізнес до 50$</option>
+                                    <option value="premium">преміум до 60$</option>
+                                    <option value="luxury">люкс до 70$</option>
+                                </select>
+                            </div>
+                            <div className="col-md-4">
+                                <select className="form-select" onChange={handleFuelTypeChange}>
+                                    <option value="">Тип пального</option>
+                                    <option value="Бензин">Бензин</option>
+                                    <option value="Дизель">Дизель</option>
+                                </select>
+                            </div>
+                            <div className="col-md-4">
+                                <select className="form-select" onChange={handleGearboxChange}>
+                                    <option value="">Тип коробки передач</option>
+                                    <option value="Автоматична">Автоматична</option>
+                                    <option value="Механічна">Механічна</option>
+                                </select>
+                            </div>
+                            <div className="col-md-4">
+                                <select className="form-select" onChange={handleBrandChange}>
+                                    <option value="">Бренд</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Toyota">Honda</option>
+                                    <option value="Toyota">Nissan</option>
+                                    <option value="Toyota">Hyundai</option>
+                                    <option value="Toyota">Kia</option>
+                                    <option value="Toyota">Volkswagen</option>
+                                    <option value="Toyota">BMW</option>
+                                    <option value="Toyota">Audi</option>
+                                    <option value="Toyota">Mercedes</option>
+                                    <option value="Toyota">Renault</option>
+                                    <option value="Toyota">Volvo</option>
                                 </select>
                             </div>
                         </div>

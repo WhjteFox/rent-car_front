@@ -9,7 +9,7 @@ import '../Buttons.css';
 const Card = ({ car, user_id }) => {
     const [showModal, setShowModal] = useState(false);
     const [showBookingModal, setShowBookingModal] = useState(false);
-    const [isReserved, setIsReserved] = useState(car.status === 'Reserved');
+    const [isReserved, setIsReserved] = useState(false);
     const [like_icon, setLikeIcon] = useState('./image/icons/heart_red_outline.png');
     const [like_hover_icon, setLikeHoverIcon] = useState('./image/icons/heart_black_outline.png');
 
@@ -183,6 +183,9 @@ const Card = ({ car, user_id }) => {
                 handleClose={handleCloseBookingModal}
                 handleBooking={handleBooking}
                 carId={car.id}
+                carYear={car.year}
+                carBrand={car.brand}
+                carModel={car.model}
                 carImage={car.image}
                 carPrice={car.price}
                 userId={user_id}

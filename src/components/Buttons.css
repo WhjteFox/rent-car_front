@@ -40,7 +40,7 @@
     padding-right: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0;
+    margin-left: 0px;
     width: 28px;
     border-radius: 0;
 }
@@ -146,8 +146,30 @@
     transition: all 0.2s;
 }
 
+.button-gray {
+    background-color: rgb(63, 63, 63);
+    color:rgb(188, 188, 188);
+    font-weight: 500;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.button-gray:hover {
+    background-color: rgb(175, 175, 175);
+    color: black;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.button-gray:active {
+    background-color: rgb(110, 110, 110);
+    color: black;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
 .button-panel .button-disabled {
-    background-color: rgba(120, 120, 120, 0.1);
+    background-color: rgba(100, 100, 100, 0.1);
     color:rgb(70, 70, 70);
     font-weight: 700;
     transform: scale(1);

@@ -7,7 +7,10 @@
       "password": "admin1234",
       "avatar": "./image/avatars/1.png",
       "access": "admin",
-      "likes": []
+      "likes": [
+        "ford-focus2013",
+        "toyota-corolla2019"
+      ]
     },
     {
       "id": "default_user",
@@ -27,7 +30,9 @@
       "access": "user",
       "likes": [
         "ford-focus2013",
-        "toyota-corolla2019"
+        "toyota-corolla2019",
+        "ford-fusion2019",
+        "chevrolet-impala2020"
       ]
     },
     {
@@ -38,19 +43,74 @@
       "avatar": "./image/avatars/1.png",
       "access": "user",
       "likes": []
+    },
+    {
+      "id": "patrik",
+      "fullname": "Patrik Zirko",
+      "email": "spongebob1234@gmail.com",
+      "password": "1234",
+      "avatar": "./image/avatars/4.jpeg",
+      "access": "user",
+      "likes": []
+    },
+    {
+      "id": "user2",
+      "fullname": "Користувач",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "avatar": "data:image/png;base64,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",
+      "access": "user",
+      "likes": [
+        "ford-fusion2019",
+        "toyota-corolla2019"
+      ]
     }
   ],
   "bookings": [
     {
-      "id": "usertoyota-corolla20191703455850362",
-      "car": "toyota-corolla2019",
+      "id": "userford-focus20131703599555347",
+      "car": "ford-focus2013",
       "user": "user",
-      "totalPrice": 40,
+      "carYear": "2013",
+      "carBrand": "Ford",
+      "carModel": "Focus",
+      "carImage": "./image/ford-focus2013.png",
+      "totalPrice": 120,
       "pickUpLocation": "Шандора Петефі площа",
-      "returnLocation": "",
+      "returnLocation": "Минайська вулиця",
       "additionalComments": "",
-      "pickUpDate": "2023-12-25T21:59:50.000Z",
-      "returnDate": "2023-12-26T21:59:50.000Z"
+      "pickUpDate": "2023-12-26T14:05:36.285Z",
+      "returnDate": "2023-12-30T14:05:36.000Z"
+    },
+    {
+      "id": "adminford-fusion20191703601582876",
+      "car": "ford-fusion2019",
+      "user": "admin",
+      "carYear": "2019",
+      "carBrand": "Ford",
+      "carModel": "Fusion",
+      "carImage": "./image/ford-fusion2019.png",
+      "totalPrice": 150,
+      "pickUpLocation": "Шандора Петефі площа",
+      "returnLocation": "Минайська вулиця",
+      "additionalComments": "",
+      "pickUpDate": "2023-12-26T14:39:26.895Z",
+      "returnDate": "2023-12-29T14:39:26.000Z"
+    },
+    {
+      "id": "userchevrolet-impala20201703601713134",
+      "car": "chevrolet-impala2020",
+      "user": "user",
+      "carYear": "2020",
+      "carBrand": "Chevrolet",
+      "carModel": "Impala",
+      "carImage": "./image/chevrolet-impala2020.png",
+      "totalPrice": 180,
+      "pickUpLocation": "Шандора Петефі площа",
+      "returnLocation": "Минайська вулиця",
+      "additionalComments": "",
+      "pickUpDate": "2023-12-26T14:41:32.314Z",
+      "returnDate": "2023-12-29T14:41:32.000Z"
     }
   ],
   "cars": [
@@ -69,7 +129,7 @@
       "wheeldrive": "Передній привід",
       "enginesize": "1.6",
       "gasoline": "7.8 л/100 км",
-      "available": true
+      "available": false
     },
     {
       "id": "toyota-corolla2019",
@@ -86,7 +146,7 @@
       "wheeldrive": "Передній привід",
       "enginesize": "1.8",
       "gasoline": "6.7 л/100 км",
-      "available": false
+      "available": true
     },
     {
       "id": "ford-fusion2019",
@@ -103,7 +163,7 @@
       "wheeldrive": "Повний привід",
       "enginesize": "2.5",
       "gasoline": "8.5 л/100 км",
-      "available": true
+      "available": false
     },
     {
       "id": "chevrolet-impala2020",
@@ -120,7 +180,7 @@
       "wheeldrive": "Передній привід",
       "enginesize": "3.6",
       "gasoline": "9.8 л/100 км",
-      "available": true
+      "available": false
     },
     {
       "id": "honda-accord2015",

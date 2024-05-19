@@ -9,11 +9,15 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 registerLocale('uk', uk);
 
-const BookingModal = ({ showModal, handleClose, handleBooking, carId, carImage, carPrice, userId, isReserved }) => {
+const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, carBrand, carModel, carImage, carPrice, userId, isReserved }) => {
     const [formData, setFormData] = useState({
         id: "",
         car: carId,
         user: userId,
+        carYear: carYear,
+        carBrand: carBrand,
+        carModel: carModel,
+        carImage: carImage,
         totalPrice: 0,
         pickUpLocation: '',
         returnLocation: '',

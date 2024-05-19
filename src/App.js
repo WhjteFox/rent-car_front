@@ -5,6 +5,7 @@ import { LoginPage } from './pages/LoginPage';
 import { HomePage } from './pages/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { LikesPage } from './pages/LikesPage/LikesPage';
+import { BookingsPage } from './pages/BookingsPage/BookingsPage';
 import { useEffect } from 'react';
 
 function App() {
@@ -44,8 +45,9 @@ function App() {
                 <Route path='/' element={<HomePage />}></Route>
                 <Route path='/login' element={<LoginPage />}></Route>
                 <Route path='/signup' element={<SignupPage />}></Route>
-                <Route path='/profile' element={<ProfilePage />}></Route>
                 <Route path='/likes' element={<LikesPage />}></Route>
+                <Route path='/bookings' element={<BookingsPage />}></Route>
+                <Route path='/profile' element={<ProfilePage />}></Route>
             </Routes>
         </div>
     ); //test comment

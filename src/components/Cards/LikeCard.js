@@ -9,7 +9,7 @@ import '../Buttons.css';
 const LikeCard = ({ car, user_id }) => {
     const [showModal, setShowModal] = useState(false);
     const [showBookingModal, setShowBookingModal] = useState(false);
-    const [isReserved, setIsReserved] = useState(car.status === 'Reserved');
+    const [isReserved, setIsReserved] = useState(false);
     const [isLiked, setLiked] = useState(false);
 
     useEffect(() => {
@@ -79,6 +79,25 @@ const LikeCard = ({ car, user_id }) => {
         setShowBookingModal(false);
     };
 
+    const handleDeleteClick = () => {
+        fetch("http://localhost:8001/users/" + user_id)
+            .then(res => res.json())
+            .then(userdata => {
+                console.log(userdata.likes);
+                let index = userdata.likes.indexOf(car.id);
+                if (index >= 0) {
+                    userdata.likes.splice(index, 1);
+                }
+                fetch("http://localhost:8001/users/" + user_id, {
+                    method: "PUT",
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify(userdata)
+                }).then(() => {
+                    setLiked(false);
+                });
+            })
+    }
+
     return (
         <div>
             {isLiked ? (
@@ -106,11 +125,11 @@ const LikeCard = ({ car, user_id }) => {
                             )}
                         </div>
                         <div className='button-panel'>
-                            <button className='button-red'>
+                            <button className='button-gray' onClick={handleDeleteClick}>
                                 <div className='button-content'>
                                     <div className='button-icon'>
-                                        <img src='./image/icons/heart_red_outline.png' alt='' />
-                                        <img className='img-hover' src='./image/icons/heart_black_outline.png' alt='' />
+                                        <img src={require('../image/icons/trashbin_gray.png')} alt='' />
+                                        <img className='img-hover' src={require('../image/icons/trashbin_black.png')} alt='' />
                                     </div>
                                 </div>
                             </button>
@@ -153,6 +172,9 @@ const LikeCard = ({ car, user_id }) => {
                         handleClose={handleCloseBookingModal}
                         handleBooking={handleBooking}
                         carId={car.id}
+                        carYear={car.year}
+                        carBrand={car.brand}
+                        carModel={car.model}
                         carImage={car.image}
                         carPrice={car.price}
                         userId={user_id}

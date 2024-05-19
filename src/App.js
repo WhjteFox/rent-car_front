@@ -4,10 +4,10 @@ import { SignupPage } from './pages/SignupPage';
 import { LoginPage } from './pages/LoginPage';
 import { HomePage } from './pages/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
+import { LikesPage } from './pages/LikesPage/LikesPage';
 import { useEffect } from 'react';
 
 function App() {
-
     useEffect(() => {
         fetch("http://localhost:8001/bookings/")
             .then(res => res.json())
@@ -45,6 +45,7 @@ function App() {
                 <Route path='/login' element={<LoginPage />}></Route>
                 <Route path='/signup' element={<SignupPage />}></Route>
                 <Route path='/profile' element={<ProfilePage />}></Route>
+                <Route path='/likes' element={<LikesPage />}></Route>
             </Routes>
         </div>
     ); //test comment

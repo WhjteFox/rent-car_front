@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./HomePage.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Cars } from "../../components/Cars";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import { Header } from "../../components/Header/Header";
@@ -70,13 +70,12 @@ export const HomePage = () => {
     return (
         <div className="row">
             <div className="col-3 px-0">
-                <Sidebar />
+                <Sidebar page={"home"} />
             </div>
             <div className="col-8 px-0">
                 <Header />
                 <div className="container">
                     <div className="page">
-                        <Link to={"/login"}>Вийти</Link>
                         <h3>{sessionStorage.getItem("username")}</h3>
                         <h2>Головна</h2>
                         <div className="row g-3">

@@ -2,39 +2,45 @@
   "users": [
     {
       "id": "admin",
+      "fullname": "Administrator",
+      "email": "admin@email.com",
       "password": "admin1234",
+      "avatar": "./image/avatars/1.png",
       "access": "admin",
       "likes": []
     },
     {
       "id": "default_user",
-      "password": "default_password",
+      "fullname": "Default",
+      "email": "default@email.com",
+      "password": "defaultpassword",
+      "avatar": "./image/avatars/1.png",
       "access": "user",
       "likes": []
     },
     {
       "id": "user",
+      "fullname": "Користувач",
+      "email": "user@email.com",
       "password": "1234",
+      "avatar": "./image/avatars/1.png",
       "access": "user",
       "likes": [
-        "toyota-corolla2019",
-        "ford-fusion2019",
-        "ford-focus2013"
+        "ford-focus2013",
+        "toyota-corolla2019"
       ]
+    },
+    {
+      "id": "user3",
+      "fullname": "Користувач 3",
+      "email": "user3@email.com",
+      "password": "12345",
+      "avatar": "./image/avatars/1.png",
+      "access": "user",
+      "likes": []
     }
   ],
   "bookings": [
-    {
-      "id": "userford-focus20131703449134853",
-      "car": "ford-focus2013",
-      "user": "user",
-      "totalPrice": 30,
-      "pickUpLocation": "Шандора Петефі площа",
-      "returnLocation": "Петрова вулиця",
-      "additionalComments": "",
-      "pickUpDate": "2023-12-24T19:35:42.523Z",
-      "returnDate": "2023-12-25T19:35:42.000Z"
-    },
     {
       "id": "usertoyota-corolla20191703455850362",
       "car": "toyota-corolla2019",
@@ -63,7 +69,7 @@
       "wheeldrive": "Передній привід",
       "enginesize": "1.6",
       "gasoline": "7.8 л/100 км",
-      "available": false
+      "available": true
     },
     {
       "id": "toyota-corolla2019",

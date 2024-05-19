@@ -4,7 +4,7 @@ import InfoModal from './InfoModal.js';
 import BookingModal from './BookingModal.js';
 import './Card.css';
 import './CardPrice.css';
-import './CardButtonPanel.css';
+import '../Buttons.css';
 
 const Card = ({ car, user_id }) => {
     const [showModal, setShowModal] = useState(false);
@@ -155,7 +155,7 @@ const Card = ({ car, user_id }) => {
                     </button>
                     {
                         isReserved ? (
-                            <button className={`button-disabled ${isReserved ? 'disabled' : ''}`} onClick={handleBookingClick} disabled={isReserved}>
+                            <button className={`button-disabled ${isReserved ? 'disabled' : ''}`} disabled={isReserved}>
                                 <div className='button-content'>
                                     <div className='button-icon'>
                                         <img src={require('../image/icons/key_gray.png')} alt='' />

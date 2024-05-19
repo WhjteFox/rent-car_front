@@ -1,10 +1,11 @@
 .side-bar {
     padding-top: 150px;
     position: fixed;
+    display: flex;
     width: 300px;
     padding-left: 20px;
     min-height: 100%;
-    background-color: rgba(94, 109, 123, 0.2);
+    background-color: rgba(99, 115, 130, 0.2);
     backdrop-filter: blur(10px);
     border-right: 3px solid rgba(194, 226, 255, 0.35);
     z-index: 9999;
@@ -12,6 +13,7 @@
 
 .side-navbar {
     position: fixed;
+    height: 80vh;
 }
 
 .side-navbar a {
@@ -35,4 +37,38 @@
     width: 24px;
     height: 24px;
     margin-bottom: 2px;
+}
+
+.sidebar-userdata {
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    left: 30px;
+    width: 100%;
+}
+
+.sidebar-userdata img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 18px;
+}
+
+.sidebar-userdata h3 {
+    float: left;
+    color: rgb(150, 150, 150);
+}
+
+.sidebar-bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    bottom: 25px;
+    left: 20px;
+}
+
+.sidebar-bottom a {
+    width: 90%;
 }

@@ -22,17 +22,16 @@ export const LoginPage = () => {
          }).then((response) => {
             console.log(response);
             if (Object.keys(response).length === 0) {
-               console.log("Invalid Username");
+               alert("Хибний логін або пароль");
             }
             else {
                if (response.password === password) {
                   console.log("Login success. Welcome, " + username);
                   sessionStorage.setItem("username", username);
-
                   navigate("/");
                }
                else {
-                  console.log("Invalid credentials");
+                alert("Хибний логін або пароль");
                }
             }
          }).catch((err) => {

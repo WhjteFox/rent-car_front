@@ -19,6 +19,13 @@ span {
     font-size: 18px;
 }
 
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 a {
     text-decoration: none;
     color: white;

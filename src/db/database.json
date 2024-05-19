@@ -23,14 +23,14 @@
     {
       "id": "user",
       "fullname": "user",
-      "email": "user@email.com",
+      "email": "user123423@gmail.com",
       "password": "1234",
       "avatar": "./image/avatars/4.png",
       "likes": [
         "ford-fusion2019",
         "chevrolet-impala2020",
-        "toyota-corolla2019",
-        "ford-focus2013"
+        "ford-focus2013",
+        "toyota-corolla2019"
       ]
     },
     {

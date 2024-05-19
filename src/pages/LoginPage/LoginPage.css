@@ -1,8 +1,69 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#cbc6c6, #243b55);
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .login-form {
-    margin-top: 20vh;
-    margin-left: 100px;
-    margin-right: 100px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(37, 147, 157, 0.5);
+    box-shadow: 0 0 5px #03b0f4,
+                0 0 25px #03b0f4,
+                0 0 50px #03b0f4,
+                0 0 100px #03b0f4;
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 1;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body input {
+    margin-bottom: 1rem;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.card-body input::placeholder {
+    color: #fff;
+}
+
+.card-footer button {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #04090b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 5px #03b0f4,
+                0 0 25px #03b0f4,
+                0 0 100px #03b0f4;
+}
+
+.card-footer button:hover {
+    color: #243b55;
+    background: #fff;
 }

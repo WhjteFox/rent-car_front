@@ -22,7 +22,7 @@
 .side-navbar a {
     text-decoration: none;
     font-size: 18px;
-    color: #4ecae9;
+    color: #000304;
     padding: 10px;
     display: block;
     transition: all 0.3s;
@@ -31,7 +31,7 @@
 
 .side-navbar a:hover, .side-navbar a.active {
     background-color: #c2c2ef;
-    color: #ffffff;
+    color: #874747;
     border-radius: 8px;
 }
 
@@ -46,8 +46,8 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #b0dbf8;
-    border-radius: 101px;
+    background-color: #1c5d2a;
+    border-radius: 200px;
     margin: 20px 2px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .sidebar-userdata h3 {
-    color: #ffffff;
+    color: #50a0c5;
 }
 
 .sidebar-bottom {
@@ -76,7 +76,7 @@
 .sidebar-bottom a {
     width: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #d8a5a5;
     font-size: 18px;
     text-decoration: none;
 }
@@ -86,7 +86,7 @@
     border: none;
     border-radius: 8px;
     background-color: #4ecae9;
-    color: white;
+    color: rgb(195, 131, 131);
     font-size: 16px;
     transition: all 0.3s ease;
     cursor: pointer;

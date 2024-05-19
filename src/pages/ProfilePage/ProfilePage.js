@@ -64,29 +64,29 @@ export const ProfilePage = () => {
                     <div className="page">
                         <div className="profile-container">
                             <div className="avatar-container">
-                                <img className="rounded-circle" src={avatar} alt=""></img>
+                                <img className="rounded-circle avatar" src={avatar} alt=""></img>
                             </div>
-                            <div className="editprofile">
-                                <a href="/editprofile">
-                                    <button className="btn btn-outline-secondary rounded-pill px-5 fs-5">Редагувати профіль</button>
-                                </a>
+                            <div className="profile-info">
+                                <h2>{fullName}</h2>
+                                <h3>{id}</h3>
+                                <p className="email">
+                                    <img src="./image/icons/profile_email.png" alt=""></img>
+                                    {email}
+                                </p>
+                                <p className="likes">
+                                    <img src="./image/icons/profile_likes.png" alt=""></img>
+                                    Вподобань: {n_likes}
+                                </p>
+                                <p className="bookings">
+                                    <img src="./image/icons/profile_bookings.png" alt=""></img>
+                                    Бронювань: {n_bookings}
+                                </p>
+                                <div className="editprofile">
+                                    <a href="/editprofile">
+                                        <button className="btn btn-outline-secondary rounded-pill px-5 fs-5">Редагувати профіль</button>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="profile-info">
-                            <h2>{fullName}</h2>
-                            <h3>{id}</h3>
-                            <p className="email">
-                                <img src="./image/icons/profile_email.png" alt=""></img>
-                                {email}
-                            </p>
-                            <p className="likes">
-                                <img src="./image/icons/profile_likes.png" alt=""></img>
-                                Вподобань: {n_likes}
-                            </p>
-                            <p className="bookings">
-                                <img src="./image/icons/profile_bookings.png" alt=""></img>
-                                Бронювань: {n_bookings}
-                            </p>
                         </div>
                     </div>
                 </div>

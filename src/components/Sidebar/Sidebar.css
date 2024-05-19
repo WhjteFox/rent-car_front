@@ -1,85 +1,98 @@
 .side-bar {
-    padding-top: 100px;
+    padding-top: 80px;
     position: fixed;
     display: flex;
-    width: 300px;
+    flex-direction: column;
+    width: 15%;
     padding-left: 20px;
     min-height: 100%;
-    background-color: rgba(110, 127, 144, 0.3);
-    backdrop-filter: blur(10px);
-    border-right: 4px solid rgba(194, 226, 255, 0.35);
+    background-color: #99a7c4;
+    backdrop-filter: blur(20px);
+    border-right: 4px solid rgba(99, 173, 228, 0.35);
     z-index: 9999;
 }
 
 .side-navbar {
-    position: fixed;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 240px);
+    overflow-y: auto;
 }
 
 .side-navbar a {
     text-decoration: none;
-    font-size: 24px;
-    color: rgb(220, 220, 220);
-    transition: all 0.2s;
+    font-size: 18px;
+    color: #4ecae9;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 8px;
 }
 
-.side-navbar div {
-    background-color: rgba(255, 255, 255, 0.0);
-    transition: all 0.2s;
-}
-
-.side-navbar div:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: all 0.2s;
-}
-
-.side-navbar img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 2px;
+.side-navbar a:hover, .side-navbar a.active {
+    background-color: #c2c2ef;
+    color: #ffffff;
+    border-radius: 8px;
 }
 
 .side-navbar .logo-container img {
-    margin-left: 10px;
-    margin-bottom: 50px;
-    width: 250px;
-    height: 140px
-}
-
-.side-navbar .logo-container:hover {
-    background-color: transparent;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 180px;
+    height: auto;
 }
 
 .sidebar-userdata {
     display: flex;
-    position: absolute;
-    bottom: 110px;
-    left: 30px;
-    width: 100%;
+    align-items: center;
+    padding: 20px;
+    background-color: #b0dbf8;
+    border-radius: 101px;
+    margin: 20px 2px;
 }
 
 .sidebar-userdata img {
     width: 60px;
     height: 60px;
-    margin-left: 5px;
-    margin-right: 18px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #ff6b6b;
 }
 
 .sidebar-userdata h3 {
-    float: left;
-    color: rgb(150, 150, 150);
+    color: #ffffff;
 }
 
 .sidebar-bottom {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    bottom: 25px;
-    left: 20px;
+    padding: 20px;
+    background-color: #ff6b6b;
+    border-radius: 8px;
+    margin: 20px;
 }
 
 .sidebar-bottom a {
-    width: 90%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4ecae9;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3d3d4e;
+    color: #ffffff;
 }

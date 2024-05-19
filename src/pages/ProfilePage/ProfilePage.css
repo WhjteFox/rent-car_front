@@ -3,70 +3,96 @@
     flex-direction: row;
     align-items: center;
     margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.profile-container .editprofile {
-    margin-right: 30px;
-    margin-left: auto;
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+.avatar-container {
+    margin: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.profile-container button {
-    margin-right: 30px;
-    margin-left: auto;
-    height: 70px;
+.avatar {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgba(240, 240, 240, 0.8);
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
 .profile-info h2 {
-    font-size: 48px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .profile-info h3 {
-    font-size: 36px;
-    color: rgb(140, 140, 140);
-}
-
-.profile-info h4 {
-    font-size: 38px;
-    color: rgb(240, 240, 240);
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .profile-info p {
-    font-size: 36px;
+    font-size: 18px;
+    color: #777;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info p img {
+    width: 30px;
+    margin-right: 10px;
 }
 
 .profile-info .email {
-    margin-top: 20px;
-    color: white;
+    color: #004D40;
 }
 
 .profile-info .likes {
-    margin-top: 25px;
-    color: rgb(242, 73, 73);
+    color: #E53935;
 }
 
 .profile-info .bookings {
-    color: rgb(72, 211, 89);
+    color: #388E3C;
 }
 
-.profile-info img {
-    width: 50px;
-    margin-right: 20px;
-    margin-bottom: 5px;
+.profile-info .editprofile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.avatar-container {
-    margin: 50px;
+.profile-info .editprofile button {
+    background-color: #00ACC1;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-.avatar-container img {
-    width: 250px;
-    height: 250px;
-    border: 10px solid rgba(240, 240, 240, 0.5);
+.profile-info .editprofile button:hover {
+    background-color: #00838F;
 }

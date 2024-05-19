@@ -2,8 +2,6 @@
     display: flex;
     position: fixed;
     width: calc(100vw - 280px);
-    background-color: rgba(177, 209, 239, 0.35);
-    backdrop-filter: blur(16px);
     border-bottom: 4px solid rgba(201, 229, 255, 0.2);
     justify-content: center;
     padding: 10px 25px 7px 25px;
@@ -13,7 +11,7 @@
 .header h2 {
     text-decoration: none;
     font-size: 36px;
-    color: rgb(225, 225, 225);
+    color: rgb(244, 87, 9);
     transition: all 0.2s;
 }
 
@@ -22,9 +20,6 @@
     position: fixed;
     margin-top: 72px;
     width: calc(100vw - 280px);
-    background-color: rgba(155, 183, 209, 0.24);
-    backdrop-filter: blur(16px);
-    border-bottom: 3px solid rgba(201, 229, 255, 0.2);
     justify-content: center;
     padding: 10px 55px 0px 25px;
     z-index: 9999;

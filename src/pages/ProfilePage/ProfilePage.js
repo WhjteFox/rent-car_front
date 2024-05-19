@@ -25,19 +25,23 @@ export const ProfilePage = () => {
 
     return (
         <div className="row">
+            <title>Мій профіль - RentCar</title>
             <div className="col-3 px-0">
                 <Sidebar page={"profile"} />
             </div>
             <div className="col-8 px-0">
-                <Header />
+                <Header title="Мій профіль"/>
                 <div className="container">
                     <div className="page">
-                        <h2>Мій профіль</h2>
                         <div className="profile-container">
                             <div className="avatar-container">
                                 <img className="rounded-circle" src={avatar} alt=""></img>
                             </div>
-                            <button className="btn btn-outline-secondary rounded-pill px-5 fs-5">Редагувати профіль</button>
+                            <div className="editprofile">
+                                <a href="/editprofile">
+                                    <button className="btn btn-outline-secondary rounded-pill px-5 fs-5">Редагувати профіль</button>
+                                </a>
+                            </div>
                         </div>
                         <div className="profile-info">
                             <h2>{fullName}</h2>

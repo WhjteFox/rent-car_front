@@ -1,3 +1,14 @@
 .col-3 {
     width: 300px;
 }
+
+.col-md-4 {
+    margin-top: 5px;
+    width: 16%;
+    margin-left: 5px;
+}
+
+.filters {
+    display: flex;
+    margin-top: 8px;
+}

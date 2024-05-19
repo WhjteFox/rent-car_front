@@ -15,7 +15,7 @@ export const HomePage = () => {
     const [selectedPriceRange, setSelectedPriceRange] = useState("");
     const [selectedFuelType, setSelectedFuelType] = useState("");
     const [selectedGearbox, setSelectedGearbox] = useState("");
-    const [selectedBrand, setSelectedBrand] = useState(""); 
+    const [selectedBrand, setSelectedBrand] = useState("");
 
     const navigate = useNavigate();
 
@@ -61,7 +61,7 @@ export const HomePage = () => {
         setSelectedGearbox(e.target.value);
     };
 
-    const handleBrandChange = (e) => { 
+    const handleBrandChange = (e) => {
         setSelectedBrand(e.target.value);
     };
 
@@ -86,7 +86,7 @@ export const HomePage = () => {
             filtered = filtered.filter((car) => car.gearbox === selectedGearbox);
         }
 
-        if (selectedBrand !== "") { 
+        if (selectedBrand !== "") {
             filtered = filtered.filter((car) => car.brand === selectedBrand);
         }
 
@@ -95,18 +95,18 @@ export const HomePage = () => {
 
     return (
         <div className="row">
+            <title>Головна - RentCar</title>
             <div className="col-3 px-0">
                 <Sidebar page={"home"} />
             </div>
             <div className="col-8 px-0">
-                <Header />
-                <div className="container">
-                    <div className="page">
-                        <h2>Головна</h2>
-                        <div className="row g-3">
-                            <div className="col-md-4">
-                                <input type="text" className="form-control rounded-pill" placeholder="Пошук" onChange={handleSearch} />
-                            </div>
+                <Header title="Головна" />
+                <div className="header-secondary">
+                    <div className="row g-3" data-bs-theme="dark">
+                        <div className="px-3">
+                            <input type="text" className="form-control rounded-pill px-3 py-2 fs-5 mt-2" placeholder="Пошук за назвою..." onChange={handleSearch} />
+                        </div>
+                        <div className="filters">
                             <div className="col-md-4">
                                 <select className="form-select" onChange={(e) => setSelectedCategory(e.target.value)}>
                                     <option value="">Тип кузова авто</option>
@@ -158,9 +158,14 @@ export const HomePage = () => {
                                     <option value="Toyota">Volvo</option>
                                 </select>
                             </div>
+                            <div className="col-md-4">
+                                <button className="btn btn-primary mb-3 px-5" onClick={handleFilter}>Фільтрувати</button>
+                            </div>
                         </div>
-                        <button className="btn btn-primary mt-2" onClick={handleFilter}>Фільтрувати</button>
-                        <h3 className="mt-3">Список автомобілів</h3>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="page-main">
                         <div className="container">
                             {filteredData && <Cars database={filteredData} user_id={sessionStorage.getItem("username")} />}
                         </div>

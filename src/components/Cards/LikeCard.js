@@ -108,7 +108,7 @@ const LikeCard = ({ car, user_id }) => {
                     <div className='card-content'>
                         <img src={car.image} alt={car.model} />
                         <div className='empty'></div>
-                        <CardInfo color={car.color} brand={car.brand} model={car.model} year={car.year} fuel_type={car.fuel_type} gearbox={car.gearbox} wheeldrive={car.wheeldrive} enginesize={car.enginesize} gasoline={car.gasoline} />
+                        <CardInfo color={car.color} gearbox={car.gearbox} fuel_type={car.fuel_type} enginesize={car.enginesize} />
                     </div>
                     <div className='card-bottom'>
                         <div className='card-price'>

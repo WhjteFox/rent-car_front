@@ -1,6 +1,8 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import './InfoModal.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const InfoModal = ({ car, showModal, handleClose }) => {
     return (
@@ -21,13 +23,10 @@ const InfoModal = ({ car, showModal, handleClose }) => {
                         <strong>Модель:</strong> {car.model}
                     </p>
                     <p>
-                        <strong>Рік випуску автомобілю:</strong> {car.year}
+                        <strong>Рік випуску автомобіля:</strong> {car.year}
                     </p>
                     <p>
                         <strong>Ціна за день:</strong> {car.price}$
-                    </p>
-                    <p>
-                        <strong>Середня ціна за місяць:</strong> {car.price * 30}$
                     </p>
                     <p>
                         <strong>Тип пального:</strong> {car.fuel_type}
@@ -39,17 +38,12 @@ const InfoModal = ({ car, showModal, handleClose }) => {
                         <strong>Тип приводу:</strong> {car.wheeldrive}
                     </p>
                     <p>
-                        <strong>Об'єм двигуна:</strong> {car.enginesize}
+                        <strong>Об'єм двигуна:</strong> {car.enginesize} л
                     </p>
                     <p>
-                        <strong>Середній росхід топлива:</strong> {car.gasoline}
+                        <strong>Середня витрата палива:</strong> {car.gasoline}
                     </p>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Закрити
-                    </Button>
-                </Modal.Footer>
             </Modal>
         </div>
     );

@@ -33,3 +33,7 @@
   .card-header span:last-child {
     margin-right: 0;
   }
+
+  form {
+    margin: 0;
+  }

@@ -9,12 +9,14 @@ export const SignupPage = () => {
     const [password, change_password] = useState("");
     const [email, change_email] = useState("");
     const [fullname, change_fullname] = useState("");
-    const [selectedAvatar, setSelectedAvatar] = useState(null);
+    const [selectedAvatar, setSelectedAvatar] = useState("./image/avatars/1.png");
     const [avatarOptions] = useState([
-        './image/avatars/1.jpg',
-        './image/avatars/2.jpeg',
-        './image/avatars/3.jpeg',
-        './image/avatars/4.jpeg'
+        './image/avatars/1.png',
+        './image/avatars/2.png',
+        './image/avatars/3.png',
+        './image/avatars/4.png',
+        './image/avatars/5.png',
+        './image/avatars/6.png',
     ]);
     const access = "user";
     const likes = [];
@@ -61,82 +63,83 @@ export const SignupPage = () => {
     }
 
     return (
-        <html>
-            <head>
-                <title>Реєстрація - RentCar</title>
-            </head>
-            <body className='container'>
-                <div className='container'>
-                    <form onSubmit={handle_submit}>
-                        <div className='card' data-bs-theme='dark'>
-                            <div className='card-header'>
-                                <h2>Створити обліковий запис</h2>
-                            </div>
-                            <div className='card-body'>
+        <div className='container'>
+            <title>Рестрація - RentCar</title>
+            <form onSubmit={handle_submit}>
+                <div className='card' data-bs-theme='dark'>
+                    <div className='card-header'>
+                        <h2>Створити обліковий запис</h2>
+                    </div>
+                    <div className='card-body'>
+                        <div className='avatar-settings'>
+                            <div>
+                                <h3>Аватар</h3>
                                 {selectedAvatar && <img className='rounded-circle' src={selectedAvatar} alt='selected avatar' />}
-                                <div className='avatar-options'>
-                                    {avatarOptions.map((avatar, index) => (
-                                        <img
-                                            key={index}
-                                            className={`avatar-option ${selectedAvatar === avatar ? 'selected' : ''}`}
-                                            src={avatar}
-                                            alt={`avatar ${index + 1}`}
-                                            onClick={() => handleAvatarOptionClick(avatar)}
-                                        />
-                                    ))}
-                                </div>
+                            </div>
+                            <div className='avatar-options'>
+                                <h4 className='fs-5'>Виберіть зі списку:</h4>
+                                {avatarOptions.map((avatar, index) => (
+                                    <img
+                                        key={index}
+                                        className={`avatar-option ${selectedAvatar === avatar ? 'selected' : ''}`}
+                                        src={avatar}
+                                        alt={`avatar ${index + 1}`}
+                                        onClick={() => handleAvatarOptionClick(avatar)}
+                                    />
+                                ))}
+                                <h4 className='fs-5'>Або</h4>
                                 <input
                                     type='file'
                                     accept='image/*'
-                                    className='form-control mt-3 mb-3'
+                                    className='form-control mt-1 mb-2'
                                     onChange={handleAvatarChange}
                                 />
-                                <input
-                                    required
-                                    className='form-control'
-                                    value={id}
-                                    onChange={e => change_id(e.target.value)}
-                                    placeholder='Логін*'
-                                />
-                                <input
-                                    required
-                                    className='form-control mt-3'
-                                    value={fullname}
-                                    onChange={e => change_fullname(e.target.value)}
-                                    placeholder="Повне ім'я*"
-                                />
-                                <input
-                                    required
-                                    className='form-control mt-3'
-                                    value={password}
-                                    onChange={e => change_password(e.target.value)}
-                                    type='password'
-                                    placeholder='Пароль*'
-                                />
-                                <input
-                                    required
-                                    className='form-control mt-3 mb-3'
-                                    value={email}
-                                    onChange={e => change_email(e.target.value)}
-                                    placeholder='E-Mail'
-                                />
-                                <h4 className='fs-5 text-muted'>Поля, позначені зірочкою (*), обов'язкові до заповнення</h4>
-                            </div>
-                            <div className='card-footer'>
-                                <button className='btn btn-primary btn-lg px-5' type='submit'>Зареєструватися</button>
                             </div>
                         </div>
-                    </form>
-                    <div className='mt-2'>
-                        <span className='me-2'>Вже маєте акаунт? </span>
-                        <span>
-                            <a href='/login'>
-                                <button className='btn btn-outline-primary mb-1 px-4 rounded-pill'>Увійти</button>
-                            </a>
-                        </span>
+                        <h4 className='mb-3'>Особисті дані</h4>
+                        <input
+                            required
+                            className='form-control'
+                            value={id}
+                            onChange={e => change_id(e.target.value)}
+                            placeholder='Логін*'
+                        />
+                        <input
+                            required
+                            className='form-control mt-3'
+                            value={fullname}
+                            onChange={e => change_fullname(e.target.value)}
+                            placeholder="Повне ім'я*"
+                        />
+                        <input
+                            required
+                            className='form-control mt-3'
+                            value={password}
+                            onChange={e => change_password(e.target.value)}
+                            type='password'
+                            placeholder='Пароль*'
+                        />
+                        <input
+                            required
+                            className='form-control mt-3 mb-2'
+                            value={email}
+                            onChange={e => change_email(e.target.value)}
+                            placeholder='E-Mail'
+                        />
+                    </div>
+                    <div className='card-footer'>
+                        <button className='btn btn-primary btn-lg px-5' type='submit'>Зареєструватися</button>
                     </div>
                 </div>
-            </body>
-        </html>
+            </form>
+            <div className='mt-2'>
+                <span className='me-2'>Вже маєте акаунт? </span>
+                <span>
+                    <a href='/login'>
+                        <button className='btn btn-outline-primary mb-1 px-4 rounded-pill'>Увійти</button>
+                    </a>
+                </span>
+            </div>
+        </div>
     )
 }

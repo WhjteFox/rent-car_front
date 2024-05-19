@@ -29,14 +29,14 @@ export const BookingsPage = () => {
 
     return (
         <div className="row">
+            <title>Мої бронювання - RentCar</title>
             <div className="col-3 px-0">
                 <Sidebar page={"bookings"} />
             </div>
             <div className="col-8 px-0">
-                <Header />
+                <Header title="Мої бронювання"/>
                 <div className="container">
                     <div className="page">
-                        <h2>Мої бронювання</h2>
                         <div className="container">
                             {data && <BookedCars database={data} user_id={sessionStorage.getItem("username")} />}
                         </div>

@@ -2,12 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
-export const Header = () => {
+export const Header = ({title}) => {
     return (
         <div className="header">
-            <a href="/">Головна</a>
-            <a href="/login">Увійти</a>
-            <a href="/signup">Зареєструватися</a>
+            <h2>{title}</h2>
         </div>
     );
 };

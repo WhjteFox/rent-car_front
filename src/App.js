@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { LikesPage } from './pages/LikesPage/LikesPage';
 import { BookingsPage } from './pages/BookingsPage/BookingsPage';
+import { EditProfilePage } from './pages/EditProfilePage/EditProfilePage';
 import { useEffect } from 'react';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                 <Route path='/likes' element={<LikesPage />}></Route>
                 <Route path='/bookings' element={<BookingsPage />}></Route>
                 <Route path='/profile' element={<ProfilePage />}></Route>
+                <Route path='/editprofile' element={<EditProfilePage />}></Route>
             </Routes>
         </div>
     ); //test comment

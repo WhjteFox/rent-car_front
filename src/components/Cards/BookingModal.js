@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
+import { Modal, Form } from 'react-bootstrap';
 import './BookingModal.css';
 import streetsData from '../../db/database.json';
 import DatePicker from 'react-datepicker';
@@ -99,13 +99,17 @@ const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, c
         <div className='booking-modal'>
             <Modal className='info-modal' show={showModal} onHide={handleClose} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Бронювання автомобілю</Modal.Title>
+                    <Modal.Title>Бронювання автомобіля</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body data-bs-theme="dark">
                     <Form>
+                        <div>
+                            <img src={carImage} alt='Car' className='img-fluid' />
+                        </div>
                         <Form.Group controlId='pickUpLocation'>
                             <Form.Label>Місце отримання авто</Form.Label>
                             <Form.Control
+                                required
                                 type='text'
                                 placeholder='Введіть місце отримання авто'
                                 name='pickUpLocation'
@@ -129,6 +133,7 @@ const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, c
                         <Form.Group controlId='returnLocation'>
                             <Form.Label>Місце повернення авто</Form.Label>
                             <Form.Control
+                                required
                                 type='text'
                                 placeholder='Введіть місце повернення авто'
                                 name='returnLocation'
@@ -188,10 +193,6 @@ const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, c
                                 className='form-control'
                             />
                         </Form.Group>
-
-                        <div>
-                            <img src={carImage} alt='Car' className='img-fluid' />
-                        </div>
                         <Form.Group controlId='totalCost'>
                             <Form.Label>Загальна вартість оренди:</Form.Label>
                             <Form.Control type='text' value={`$${totalCost}`} readOnly />
@@ -199,9 +200,9 @@ const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, c
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant='primary' onClick={handleSubmit} disabled={isReserved}>
+                    <button className='btn btn-primary btn-lg' onClick={handleSubmit} disabled={isReserved}>
                         Забронювати
-                    </Button>
+                    </button>
                 </Modal.Footer>
             </Modal>
         </div>

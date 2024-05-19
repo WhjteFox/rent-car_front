@@ -3,6 +3,7 @@ body {
 }
 
 .card {
+    margin-top: 30px;
     background-color: rgba(50, 51, 55, 0.2);
     backdrop-filter: blur(12px);
     border: 2px solid rgba(150, 150, 150, 0.3);
@@ -22,8 +23,8 @@ span {
 .card img {
     width: 200px;
     height: 200px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -40,4 +41,34 @@ a {
 .btn:active {
     transform: scale(0.82);
     transition: all 0.15s;
+}
+
+.avatar-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 1, 5, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.avatar-options {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.avatar-options img {
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+.rounded-circle {
+    margin-left: 25px;
+    margin-right: 23px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
 }

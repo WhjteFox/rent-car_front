@@ -29,14 +29,14 @@ export const LikesPage = () => {
 
     return (
         <div className="row">
+            <title>Список бажань - RentCar</title>
             <div className="col-3 px-0">
                 <Sidebar page={"likes"} />
             </div>
             <div className="col-8 px-0">
-                <Header />
+                <Header title="Список бажаного"/>
                 <div className="container">
                     <div className="page">
-                        <h2>Список бажаного</h2>
                         <div className="container">
                             {data && <LikedCars database={data} user_id={sessionStorage.getItem("username")} />}
                         </div>

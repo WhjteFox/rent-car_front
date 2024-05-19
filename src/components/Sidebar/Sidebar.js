@@ -51,6 +51,9 @@ export const Sidebar = ({ page }) => {
     return (
         <div className="side-bar">
             <div className="side-navbar">
+                <div className="logo-container">
+                    <img src="./image/Logo.png" alt="RentCar logo"></img>
+                </div>
                 {isHome ? (
                     <div className="d-flex align-items-center px-4 py-3 rounded-pill">
                         <span className="me-3 position-relative">

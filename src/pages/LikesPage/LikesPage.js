@@ -9,6 +9,7 @@ import { LikedCars } from "../../components/LikedCars";
 
 export const LikesPage = () => {
     const [data, change_data] = useState(null);
+    const [isEmpty, setEmpty] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -25,6 +26,15 @@ export const LikesPage = () => {
             navigate("/login");
             console.log("Login first");
         }
+        else {
+            fetch("http://localhost:8001/users/" + username)
+            .then(res => res.json())
+            .then(userdata => {
+                if(userdata.likes.length === 0) {
+                    setEmpty(true);
+                }
+            })
+        }
     }, [navigate]);
 
     return (
@@ -38,7 +48,16 @@ export const LikesPage = () => {
                 <div className="container">
                     <div className="page">
                         <div className="container">
-                            {data && <LikedCars database={data} user_id={sessionStorage.getItem("username")} />}
+                            {isEmpty ? (
+                                <p className="emptylist">
+                                    <img src="./image/icons/emptylist.png" alt=""></img>
+                                    Список бажаного порожній
+                                </p>
+                            ) : (
+                                <div>
+                                    {data && <LikedCars database={data} user_id={sessionStorage.getItem("username")} />}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

@@ -12,3 +12,15 @@
     display: flex;
     margin-top: 8px;
 }
+
+.emptylist {
+    color: rgb(200, 220, 250);
+    font-size: 42px;
+    margin-top: 45vh;
+    margin-left: 100px;
+}
+
+.emptylist img {
+    width: 100px;
+    margin-right: 50px;
+}

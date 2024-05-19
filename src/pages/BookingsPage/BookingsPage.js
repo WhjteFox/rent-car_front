@@ -9,6 +9,7 @@ import { BookedCars } from "../../components/BookedCars";
 
 export const BookingsPage = () => {
     const [filtered_data, change_filtered_data] = useState(null);
+    const [isEmpty, setEmpty] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -25,8 +26,12 @@ export const BookingsPage = () => {
             .then(result => {
                 let filtered = result;
                 let username = sessionStorage.getItem("username");
-                filtered = filtered.filter((booking) => booking.user === username);
+                filtered = filtered.filter((booking) => booking.user === username && booking.valid === true);
                 change_filtered_data(filtered);
+                console.log(filtered);
+                if (filtered.length === 0) {
+                    setEmpty(true);
+                }
             });
     }, []);
 
@@ -37,11 +42,18 @@ export const BookingsPage = () => {
                 <Sidebar page={"bookings"} />
             </div>
             <div className="col-8 px-0">
-                <Header title="Мої бронювання"/>
+                <Header title="Мої бронювання" />
                 <div className="container">
                     <div className="page">
                         <div className="container">
-                            {filtered_data && <BookedCars database={filtered_data} user_id={sessionStorage.getItem("username")} />}
+                            {isEmpty ? (
+                                <p className="emptylist">
+                                    <img src="./image/icons/emptylist.png" alt=""></img>
+                                    Список бронювань порожній
+                                </p>
+                            ) : (
+                                <div>{filtered_data && <BookedCars database={filtered_data} user_id={sessionStorage.getItem("username")} />}</div>
+                            )}
                         </div>
                     </div>
                 </div>

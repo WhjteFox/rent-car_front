@@ -17,7 +17,7 @@ function App() {
                 for (let booking of bookings) {
                     let dateNow = new Date();
                     let dateReturn = new Date(Date.parse(booking.returnDate));
-                    if (dateNow.getTime() > dateReturn.getTime()) {
+                    if (dateNow.getTime() > dateReturn.getTime() || booking.valid === false) {
                         fetch("http://localhost:8001/cars/" + booking.car)
                             .then((res) => res.json())
                             .then(cardata => {
@@ -32,7 +32,7 @@ function App() {
                         fetch("http://localhost:8001/bookings/" + booking.id, {
                             method: "DELETE"
                         }).then(() => {
-                            console.log("1 expired booking removed");
+                            console.log("1 expired or invalid booking removed");
                         })
                     }
                 }

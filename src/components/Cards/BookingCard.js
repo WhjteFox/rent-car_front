@@ -10,27 +10,23 @@ const BookingCard = ({ booking, user_id }) => {
     const [return_date, setReturnDate] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:8001/bookings/" + booking.id)
-            .then(res => res.json())
-            .then(bookingdata => {
-                if (bookingdata.user === user_id) {
-                    setVisibility(true);
-                    let pickup_date = new Date(Date.parse(bookingdata.pickUpDate))
-                    let pickup_day = pickup_date.getDate();
-                    let pickup_month = pickup_date.getMonth();
-                    let pickup_year = pickup_date.getFullYear();
-                    setPickUpDate(pickup_day + "." + pickup_month + "." + pickup_year);
-                    let return_date = new Date(Date.parse(bookingdata.returnDate))
-                    let return_day = return_date.getDate();
-                    let return_month = return_date.getMonth();
-                    let return_year = return_date.getFullYear();
-                    setReturnDate(return_day + "." + return_month + "." + return_year);
-                }
-                else {
-                    setVisibility(false);
-                }
-            });
-    }, [user_id, booking.id]);
+        if (booking.valid) {
+        setVisibility(true);
+        let pickup_date = new Date(Date.parse(booking.pickUpDate))
+        let pickup_day = pickup_date.getDate();
+        let pickup_month = pickup_date.getMonth();
+        let pickup_year = pickup_date.getFullYear();
+        setPickUpDate(pickup_day + "." + pickup_month + "." + pickup_year);
+        let return_date = new Date(Date.parse(booking.returnDate))
+        let return_day = return_date.getDate();
+        let return_month = return_date.getMonth();
+        let return_year = return_date.getFullYear();
+        setReturnDate(return_day + "." + return_month + "." + return_year);
+        }
+        else {
+            setVisibility(false);
+        }
+    }, [booking.pickUpDate, booking.returnDate, booking.valid]);
 
     const handleDeleteClick = () => {
         fetch("http://localhost:8001/cars/" + booking.car)
@@ -45,7 +41,12 @@ const BookingCard = ({ booking, user_id }) => {
                 });
             });
         fetch("http://localhost:8001/bookings/" + booking.id, {
-            method: "DELETE"
+            method: "PUT",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+                ...booking,
+                valid: false
+            })
         }).then(() => {
             setVisibility(false);
         })

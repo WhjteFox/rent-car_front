@@ -37,6 +37,30 @@
     color: rgb(240, 240, 240);
 }
 
+.profile-info p {
+    font-size: 36px;
+}
+
+.profile-info .email {
+    margin-top: 20px;
+    color: white;
+}
+
+.profile-info .likes {
+    margin-top: 25px;
+    color: rgb(242, 73, 73);
+}
+
+.profile-info .bookings {
+    color: rgb(72, 211, 89);
+}
+
+.profile-info img {
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
 .avatar-container {
     margin: 50px;
 }

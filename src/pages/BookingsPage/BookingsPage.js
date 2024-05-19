@@ -8,16 +8,8 @@ import { Header } from "../../components/Header/Header";
 import { BookedCars } from "../../components/BookedCars";
 
 export const BookingsPage = () => {
-    const [data, change_data] = useState(null);
+    const [filtered_data, change_filtered_data] = useState(null);
     const navigate = useNavigate();
-
-    useEffect(() => {
-        fetch("http://localhost:8001/bookings")
-            .then(res => res.json())
-            .then(result => {
-                change_data(result);
-            });
-    }, []);
 
     useEffect(() => {
         let username = sessionStorage.getItem("username");
@@ -26,6 +18,17 @@ export const BookingsPage = () => {
             console.log("Login first");
         }
     }, [navigate]);
+
+    useEffect(() => {
+        fetch("http://localhost:8001/bookings")
+            .then(res => res.json())
+            .then(result => {
+                let filtered = result;
+                let username = sessionStorage.getItem("username");
+                filtered = filtered.filter((booking) => booking.user === username);
+                change_filtered_data(filtered);
+            });
+    }, []);
 
     return (
         <div className="row">
@@ -38,7 +41,7 @@ export const BookingsPage = () => {
                 <div className="container">
                     <div className="page">
                         <div className="container">
-                            {data && <BookedCars database={data} user_id={sessionStorage.getItem("username")} />}
+                            {filtered_data && <BookedCars database={filtered_data} user_id={sessionStorage.getItem("username")} />}
                         </div>
                     </div>
                 </div>

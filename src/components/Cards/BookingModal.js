@@ -24,6 +24,7 @@ const BookingModal = ({ showModal, handleClose, handleBooking, carId, carYear, c
         additionalComments: '',
         pickUpDate: new Date(),
         returnDate: new Date(),
+        valid: true
     });
 
     const [suggestions, setSuggestions] = useState([]);

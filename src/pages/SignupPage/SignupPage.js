@@ -18,7 +18,6 @@ export const SignupPage = () => {
         './image/avatars/5.png',
         './image/avatars/6.png',
     ]);
-    const access = "user";
     const likes = [];
 
     const navigate = useNavigate();
@@ -40,7 +39,7 @@ export const SignupPage = () => {
 
     const handle_submit = (e) => {
         e.preventDefault();
-        let signup_user = { id, fullname, email, password, avatar: selectedAvatar, access, likes };
+        let signup_user = { id, fullname, email, password, avatar: selectedAvatar, likes };
         fetch("http://localhost:8001/users/" + signup_user.id)
             .then((res) => res.json())
             .then((response) => {
@@ -102,14 +101,14 @@ export const SignupPage = () => {
                             className='form-control'
                             value={id}
                             onChange={e => change_id(e.target.value)}
-                            placeholder='Логін*'
+                            placeholder='Логін'
                         />
                         <input
                             required
                             className='form-control mt-3'
                             value={fullname}
                             onChange={e => change_fullname(e.target.value)}
-                            placeholder="Повне ім'я*"
+                            placeholder="Повне ім'я"
                         />
                         <input
                             required
@@ -117,7 +116,7 @@ export const SignupPage = () => {
                             value={password}
                             onChange={e => change_password(e.target.value)}
                             type='password'
-                            placeholder='Пароль*'
+                            placeholder='Пароль'
                         />
                         <input
                             required

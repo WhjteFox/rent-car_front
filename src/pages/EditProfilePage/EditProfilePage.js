@@ -29,6 +29,14 @@ export const EditProfilePage = () => {
 
     const navigate = useNavigate();
 
+    useEffect(() => {
+        let username = sessionStorage.getItem("username");
+        if (username === "" || username === null) {
+            navigate("/login");
+            console.log("Login first");
+        }
+    }, [navigate]);
+
     const handleAvatarChange = (e) => {
         const file = e.target.files[0];
         if (file) {
